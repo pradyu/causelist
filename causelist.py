@@ -76,7 +76,8 @@ class FetchList():
         r2 = s.post('http://hc.tap.nic.in/Hcdbs/searchtypeinput.do', data = {'listdate': date, 'caset': 'advcdsearch'})
         print r2.cookies
         #cookies = dict(jsessionid=r2.cookies['JSESSIONID'])
-        r3 = s.post('http://hc.tap.nic.in/Hcdbs/searchtype.do', data = {'advcd' : '4199' })
+        adv_codes = ['4199', '4121']
+        r3 = s.post('http://hc.tap.nic.in/Hcdbs/searchtype.do', data = {'advcd': '4199'})
         soup = BeautifulSoup(r3.text, 'html.parser')
         courts = soup.find_all('td', attrs = {'data-label': 'Court'})
         c_list = []
@@ -110,7 +111,7 @@ class FetchList():
                     cases[cur_sno] = {"stage": cur_stage}
                 elif  court_sib['data-label'] == 'Case No.' or court_sib['data-label'] == 'Sub case No.':
                     #print "case_no:" + court_sib.text
-                    if not (court_sib.text.startswith('- -/-') or court_sib.text.startswith('.') or court_sib.text.startswith('WPMP') or court_sib.text.startswith('WVMP') or court_sib.text.startswith('WAMP')):
+                    if not (court_sib.text.startswith(('- -/-', '.', 'WPMP', 'WVMP', 'WAMP'))):
                         case_id = {'case_id': court_sib.text}
                         cases[cur_sno].setdefault('caseno',[]).append(case_id)
                         q.put(case_id)
@@ -135,9 +136,9 @@ class FetchList():
         context = { 'causelist': causelist, 'date': date }
         #print "printing the context:"
         #print(json.dumps(context, sort_keys=True, indent=4))
-        tpl=DocxTemplate('causelists.docx')
+        tpl=DocxTemplate('causelist_tmpl.docx')
         tpl.render(context)
-        tpl.save('causelists_result.docx')
+        tpl.save(date + '.docx')
 
 fetchList = FetchList()
 fetchList.convertToCauseListDocx()
