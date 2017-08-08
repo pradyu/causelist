@@ -1,0 +1,3392 @@
+{
+  "causelist": [
+    {
+      "cases": [
+        {
+          "caseno": [
+            {
+              "case_id": "WP 21041/2017",
+              "petitioner": "K THIRUPATHI REDDY, MAHABOOBNAGAR DIST",
+              "respondent": "MD, TS BEVERAGES CORP LTD., HYDERABAD & ANOTHER"
+            }
+          ],
+          "id": 24,
+          "stage": "ADMISSION (FRESH MATTERS)"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 21308/2017",
+              "petitioner": "N RAMESH KUMAR, NIZAMABAD DIST",
+              "respondent": "MD, TS BEVERAGES CORP LTD., HYDERABAD & ANOTHER"
+            }
+          ],
+          "id": 27,
+          "stage": "ADMISSION (FRESH MATTERS)"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WA 588/2017",
+              "petitioner": "PRAGA TOOLS LIMITED",
+              "respondent": "K. NARSING RAO"
+            }
+          ],
+          "id": 96,
+          "stage": "MISCELLANEOUS MATTERS(PRE ADMISSION MISC.PETITION)"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WA 1134/2016",
+              "petitioner": "N. DARAHASA LAHARI, HYDERABAD",
+              "respondent": "CHIEF EO,STAR UNION DAI-ICHI LIFE INSURANCE CO.LTD,MUMBAI&AN;"
+            }
+          ],
+          "id": 261,
+          "stage": "FOR ADMISSION"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 32984/2016",
+              "petitioner": "K SATYAVANI, HYDERABAD",
+              "respondent": "UNDER SECY, DEPT. OF PERSONNEL & TRAINING, NEW DELHI & 8 OTH"
+            }
+          ],
+          "id": 465,
+          "stage": "ADMISSION"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 33037/2016",
+              "petitioner": "P.RAMA TULASI",
+              "respondent": "GOVT.OF INDIA,U.SCY,PERSONNEL,& 7"
+            }
+          ],
+          "id": 467,
+          "stage": "ADMISSION"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 33826/2016",
+              "petitioner": "SYED MOHAMMED",
+              "respondent": "MINISTRY OF PERSONNEL., GOVT OF INDIA & 6 OTHERS"
+            }
+          ],
+          "id": 474,
+          "stage": "ADMISSION"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WASR 167991/2016",
+              "petitioner": "CHAIRMAN & MD, APSPDCL, KADAPA DIST & ANOTHER",
+              "respondent": "PRINCIPAL, ITI, KADAPA DIST & ANR"
+            }
+          ],
+          "id": 645,
+          "stage": "INTERLOCUTORY"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WA 790/2017",
+              "petitioner": "CHAIRMAN & MD, TSSPDCL, HYDERABAD",
+              "respondent": "P.RAGHAVENDRA RAO, RR DIST & 6 OTHERS"
+            },
+            {
+              "case_id": "WA 791/2017",
+              "petitioner": "MD, TSSPDCL, HYD",
+              "respondent": "P. RAGHAVENDRA RAO, RR DIST & 6 OTHERS"
+            },
+            {
+              "case_id": "WP 16330/2015",
+              "petitioner": "P B KARUNAKAR, HYD & 8 OTHERS",
+              "respondent": "PRL SECY, ENERGY DEPT., HYD & 5 OT"
+            },
+            {
+              "case_id": "WP 16504/2015",
+              "petitioner": "MUDE NARASIMHULU,& 8",
+              "respondent": "STATE OF TELANGANA,PRL.SCY,ENERGY,HYD,& 6"
+            },
+            {
+              "case_id": "WP 16660/2015",
+              "petitioner": "N. RAMCHANDRA REDDY, & 12 OTHERS,",
+              "respondent": "SECY., ENERGY DEPT., HYD.,  & 5 OTHERS,"
+            },
+            {
+              "case_id": "WP 16849/2015",
+              "petitioner": "J.V.V. SURESH KUMAR, KHAMMAM DIST & & 161 OTHERS",
+              "respondent": "PRL SECY, ENERGY DEPT., HYD & 4 OT"
+            },
+            {
+              "case_id": "WP 16886/2015",
+              "petitioner": "G. RAMBABU, KHAMMAM DISTRICT & 28 OTHERS",
+              "respondent": "PRL. SECRETARY, ENERGY DEPT., HYD & 4 OTHERS"
+            },
+            {
+              "case_id": "WP 16984/2015",
+              "petitioner": "G. PREMA MANOHARI, HYD",
+              "respondent": "SECRETARY, ENERGY DEPT., HYD & 2 OTHERS"
+            },
+            {
+              "case_id": "WP 17059/2015",
+              "petitioner": "K.NARASINGA RAO,",
+              "respondent": "PRL.SECY., ENERGY DEPT., HYD., & 5 OTHERS,"
+            },
+            {
+              "case_id": "WP 17061/2015",
+              "petitioner": "SMT. V.MARUTHI",
+              "respondent": "STATE OF TG., REP BY ITS PRL.SECRETARY AND 2 OTHERS"
+            },
+            {
+              "case_id": "WP 17141/2015",
+              "petitioner": "A.CHANDRASEKHARA RAO, HYD & 123 OTHERS",
+              "respondent": "PRL SECY TO GOVT, DEPT ENERGY, HYD & 7 OTHERS"
+            },
+            {
+              "case_id": "WP 17164/2015",
+              "petitioner": "K.HARIBABU & 40 OTHERS",
+              "respondent": "THE STAE OF TELANGANA., DEPT OF ENERGY & 5 OTHERS"
+            },
+            {
+              "case_id": "WP 17178/2015",
+              "petitioner": "KESANA BABU RAO AND 228 OTHES",
+              "respondent": "THE STATE OF TG., REP BY ITS SECRETARY AND 5 OTHERS"
+            },
+            {
+              "case_id": "WP 17182/2015",
+              "petitioner": "P.JANARDHANA REDDY & 182 OTHERS",
+              "respondent": "THE STATE OF TELANGANA., ENERGY DEPT., & 5 OTHERS"
+            },
+            {
+              "case_id": "WP 17198/2015",
+              "petitioner": "G RAVEENDRANATH, WARANGAL & ANOTHER",
+              "respondent": "PRL SECY, ENERGY DEPT., HYD & 5 OT"
+            },
+            {
+              "case_id": "WP 17199/2015",
+              "petitioner": "V. RADHA KRISHNAM RAJU, WARANGAL",
+              "respondent": "PRL. SECY., ENERGY DEPT. & 5 ORS."
+            },
+            {
+              "case_id": "WP 17202/2015",
+              "petitioner": "P. SIVARAMAKRISHNA,",
+              "respondent": "PRL.SECY., ENERGY DEPT., HYD., & 5 OTHERS,"
+            },
+            {
+              "case_id": "WP 17207/2015",
+              "petitioner": "S J SUBRAHMANYAM, WARANGAL & ANOTHER",
+              "respondent": "PRL SECY, ENERGY DEPT. HYD & 5 OT"
+            },
+            {
+              "case_id": "WP 17209/2015",
+              "petitioner": "AVSR MURTHY",
+              "respondent": "THE STATE OF TELANGANA., DEPT OF ENERGY & 5 OTHERS"
+            },
+            {
+              "case_id": "WP 17210/2015",
+              "petitioner": "CH.ANIK KUMAR,&ANOT;",
+              "respondent": "STATE OF TELANGANA,PRL.SCY,ENERGY,HYD,& 5"
+            },
+            {
+              "case_id": "WP 17212/2015",
+              "petitioner": "S. PRASAD REDDY, WARANGAL & 23 OTHERS",
+              "respondent": "PRL. SECRETARY, ENERGY DEPT., HYD & 5 OTHERS"
+            },
+            {
+              "case_id": "WP 17213/2015",
+              "petitioner": "R SRINIVASA RAO, WARANGAL",
+              "respondent": "PRL SECY TO GOVT, DEPT OF ENERGY, HYD & 5 OTHERS"
+            },
+            {
+              "case_id": "WP 17383/2015",
+              "petitioner": "P.JUNGIL PASHA AND 35 OTHERS",
+              "respondent": "THE STATE OF TG., REP BY ITS PRL.SECRETARY AND 4 OTHERS"
+            },
+            {
+              "case_id": "WP 17481/2015",
+              "petitioner": "K. BHASKAR, HYDERABAD, & 139 OTRS.",
+              "respondent": "THE STATE OF TG.,ENERGY, HYD., & 7 OTRS."
+            },
+            {
+              "case_id": "WP 17714/2015",
+              "petitioner": "BHARGAVI POTHURI, HYDERABAD & 3 OTHERS",
+              "respondent": "PRL. SECRETARY, ENERGY DEPT., HYD & 7 OTHERS"
+            },
+            {
+              "case_id": "WP 17963/2015",
+              "petitioner": "CHAIRMAN & MD, APTRANSCO, HYDERABAD",
+              "respondent": "SECY, ENERGY DEPT., HYDERABAD & 2 OTHERS"
+            },
+            {
+              "case_id": "WP 17994/2015",
+              "petitioner": "A.P.POWER GEN CORPN LTD, HYD",
+              "respondent": "SECY, DEPT OF ENERGY, HYD & 3 OTHERS"
+            },
+            {
+              "case_id": "WP 18153/2015",
+              "petitioner": "MD, APSPDCL., TIRUPATHI & ANOTHER",
+              "respondent": "SECREATRAY, ENERGY DEPT., HYD & 3 OTHERS"
+            },
+            {
+              "case_id": "WP 19180/2015",
+              "petitioner": "SMT.M.PADMA SREE",
+              "respondent": "STATE OF TELANGANA,SCY,ENERGY,HYD,& 2"
+            },
+            {
+              "case_id": "WP 30013/2015",
+              "petitioner": "M. SRINIVASULU, HYDERABAD",
+              "respondent": "SECRETARY, ENERGY DEPT., HYD & 5 OTHERS"
+            },
+            {
+              "case_id": "WP 32713/2015",
+              "petitioner": "SMT. Y. MAHALAKSHMI, PRAKASAM DIST & 5 OTHERS",
+              "respondent": "SECRETARY, APSWREIS, HYD & 5 OTHERS"
+            },
+            {
+              "case_id": "WP 7627/2016",
+              "petitioner": "A SAMRAJYAM",
+              "respondent": "APSWREIS,SCY,HYD,& 5"
+            }
+          ],
+          "id": 775,
+          "stage": "FOR ADMISSION and HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WA 791/2017",
+              "petitioner": "MD, TSSPDCL, HYD",
+              "respondent": "P. RAGHAVENDRA RAO, RR DIST & 6 OTHERS"
+            },
+            {
+              "case_id": "WP 16330/2015",
+              "petitioner": "P B KARUNAKAR, HYD & 8 OTHERS",
+              "respondent": "PRL SECY, ENERGY DEPT., HYD & 5 OT"
+            }
+          ],
+          "id": 776,
+          "stage": "FOR ADMISSION and HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 23533/2013",
+              "petitioner": "S.VENKANNA & 21 OTHERS",
+              "respondent": "THE M.D,.APGENCO., HYDERABAD & ANOTHER"
+            },
+            {
+              "case_id": "WP 14100/2013",
+              "petitioner": "JYOTHULA RAMESH, KHAMMAM DIST & 51 OTHERS",
+              "respondent": "M.D., APGENCO, HYD & ANO"
+            },
+            {
+              "case_id": "WP 36345/2013",
+              "petitioner": "SHANKAMURI SAIBABA,KHAMMAM,& 2 OTRS.",
+              "respondent": "THE SUPERINTENDENT OF POLICE,KHAMMAM,& 5 OTRS."
+            },
+            {
+              "case_id": "WP 37427/2015",
+              "petitioner": "PANGA BHADRAIAH, WARANGAL DIST",
+              "respondent": "M.D., APGENCO., HYD & 3 OT"
+            },
+            {
+              "case_id": "WP 37914/2015",
+              "petitioner": "M/S.ANANDA LAKSHMI SPINNING MILLS LIMITED",
+              "respondent": "TSSPDCL,CHAIRMAN & M.D,HYD,& 5"
+            },
+            {
+              "case_id": "WP 38290/2015",
+              "petitioner": "RONTALA RAMESH",
+              "respondent": "APGENCO,M.D,HYD,& 3"
+            },
+            {
+              "case_id": "WP 41136/2015",
+              "petitioner": "BANOTH PRASAD",
+              "respondent": "THE M.D., TSGENCO & ANOTHER"
+            },
+            {
+              "case_id": "WP 41438/2015",
+              "petitioner": "NURA RAJA MOHAN, KHAMMAM DISTRICT",
+              "respondent": "MD, AP GENCO, VIDYUTH SOUDHA, HYD & 3 OTHERS"
+            },
+            {
+              "case_id": "WP 7250/2016",
+              "petitioner": "S. RAJENDHRA PRASAD, KADAPA DIST & ANOTHER",
+              "respondent": "CHIEF SECY, GENERAL ADMINISTRATION DEPT., HYD & 2 OT"
+            },
+            {
+              "case_id": "WP 21362/2016",
+              "petitioner": "M RAMAKRISHNA RAO",
+              "respondent": "CHIEF SECRETARY AND 2 OTHERS"
+            },
+            {
+              "case_id": "WP 26068/2014",
+              "petitioner": "SHEIK KHADEER PASHA,",
+              "respondent": "THE AP GENCO., REP. BY MD., HYD., & 3 OTHERS,"
+            }
+          ],
+          "id": 807,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 14100/2013",
+              "petitioner": "JYOTHULA RAMESH, KHAMMAM DIST & 51 OTHERS",
+              "respondent": "M.D., APGENCO, HYD & ANO"
+            }
+          ],
+          "id": 808,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 37427/2015",
+              "petitioner": "PANGA BHADRAIAH, WARANGAL DIST",
+              "respondent": "M.D., APGENCO., HYD & 3 OT"
+            }
+          ],
+          "id": 809,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 38290/2015",
+              "petitioner": "RONTALA RAMESH",
+              "respondent": "APGENCO,M.D,HYD,& 3"
+            }
+          ],
+          "id": 810,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 41136/2015",
+              "petitioner": "BANOTH PRASAD",
+              "respondent": "THE M.D., TSGENCO & ANOTHER"
+            }
+          ],
+          "id": 811,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 41438/2015",
+              "petitioner": "NURA RAJA MOHAN, KHAMMAM DISTRICT",
+              "respondent": "MD, AP GENCO, VIDYUTH SOUDHA, HYD & 3 OTHERS"
+            }
+          ],
+          "id": 812,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 21362/2016",
+              "petitioner": "M RAMAKRISHNA RAO",
+              "respondent": "CHIEF SECRETARY AND 2 OTHERS"
+            }
+          ],
+          "id": 814,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 28954/2012",
+              "petitioner": "KALUWALA SATEESH,& 4 OTHERS",
+              "respondent": "THE MANAGING DIRECTOR,AP POWER GENERATION CORPN.LTD & 2 OTHE"
+            }
+          ],
+          "id": 824,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 33229/2012",
+              "petitioner": "K. KUMARA SWAMY, KHAMMAM DIST., & 4 OTRS.",
+              "respondent": "THE APGENCO.,REP.BY MD., HYDERABAD, & 2 OTRS."
+            }
+          ],
+          "id": 825,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 33244/2012",
+              "petitioner": "NALLAGATLA RAMA KRISHNA, KHAMMAM DIST",
+              "respondent": "M.D., APGENCO, HYDERABAD & 2 OTHERS"
+            }
+          ],
+          "id": 826,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 9517/2013",
+              "petitioner": "P. RAJESHWAR RAO, WARANGAL DIST & 3 OTHERS",
+              "respondent": "M.D., APGENCO, HYD & 2 OT"
+            }
+          ],
+          "id": 827,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 9518/2013",
+              "petitioner": "NALLABALLLI SATEESHKUMAR, KHAMMAM DIST.",
+              "respondent": "M.D., APGENCO, HYD. & ANO."
+            }
+          ],
+          "id": 828,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 9525/2013",
+              "petitioner": "K. SUDHAKAR, KHAMMAM DIST",
+              "respondent": "M.D., APGENCO, HYD & 2 OT"
+            }
+          ],
+          "id": 829,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 9592/2013",
+              "petitioner": "PORANDLA KARNA, & 5 OTHERS",
+              "respondent": "THE M.D., APGENCO., & ANOTHER"
+            }
+          ],
+          "id": 830,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 9831/2013",
+              "petitioner": "CHINTA SAMBASIVA RAO, KHAMMAM DIST., & 4 OTRS.",
+              "respondent": "THE APGENCO., REP.BY MD., HYDERABAD, & ANR."
+            }
+          ],
+          "id": 831,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 10152/2013",
+              "petitioner": "MADDULA VENKATESWARA RAO, KHAMMAM & 35 OTHERS",
+              "respondent": "MD., APGENCO, HYD & ANOTHER"
+            }
+          ],
+          "id": 832,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 10372/2013",
+              "petitioner": "P.LAXMAN RAO,KHAMMAM DIST,& 3",
+              "respondent": "APGENCO,M.D,HYD,&ANOT;"
+            }
+          ],
+          "id": 833,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 10656/2013",
+              "petitioner": "S. SATYANARAYANA, KHAMMAM DIST & 12 OTHERS",
+              "respondent": "M.D., APGENCO, HYD & ANO"
+            }
+          ],
+          "id": 834,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 10789/2013",
+              "petitioner": "K. SHIVA KUMAR & 17 ORS.",
+              "respondent": "M.D., APGENCO, HYD. & ANO."
+            }
+          ],
+          "id": 835,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 11224/2013",
+              "petitioner": "NAGANABIONA ANIL KUMAR, WARANGAL DT.",
+              "respondent": "M.D., APGENCO, HYD & ANR"
+            }
+          ],
+          "id": 836,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 13083/2013",
+              "petitioner": "BUDDI NARASIMHA RAO & ANO.",
+              "respondent": "M.D., AP GENCO, HYD. & ANO."
+            },
+            {
+              "case_id": "WP 31787/2012",
+              "petitioner": "BAYINA BOYINA PADMA RAO,KRISHNA,& 5",
+              "respondent": "APGENCO,MD,HYD,& 2"
+            }
+          ],
+          "id": 837,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 13542/2013",
+              "petitioner": "BHUKYA VEERALAL, KHAMMAM DIST & 4 OTHERS",
+              "respondent": "APPGCL, HYD & ANOTHER"
+            }
+          ],
+          "id": 838,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 14097/2013",
+              "petitioner": "SEVI SINGH, NZB DIST",
+              "respondent": "APGENCO, HYD & ANOTHER"
+            }
+          ],
+          "id": 839,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 14138/2013",
+              "petitioner": "LAGADAPATI HAREESH,& 3",
+              "respondent": "GOVT.OF AP,PRL.SCY,GAD,HYD,& 2"
+            }
+          ],
+          "id": 840,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 14588/2013",
+              "petitioner": "S.DALISWAMY, KHAMMAM DIST & 3 OTHERS",
+              "respondent": "APGENCO, HYD & ANOTHER"
+            }
+          ],
+          "id": 841,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 15142/2013",
+              "petitioner": "MARLA VENKATESWARLU, KHAMMAM DT. & 3 OT",
+              "respondent": "M.D., APGENCO, HYD & ANR"
+            }
+          ],
+          "id": 842,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 18006/2013",
+              "petitioner": "VUTLA SUDARSHANAM, KHAMMAM DIST & 2 OTHERS",
+              "respondent": "M.D., APGENCO, HYD & ANO"
+            }
+          ],
+          "id": 843,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 20441/2013",
+              "petitioner": "K.RAGHUNATHA REDDY, KARIMNAGAR DIST",
+              "respondent": "M.D., APGENCO, HYD & ANO"
+            }
+          ],
+          "id": 845,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 20488/2013",
+              "petitioner": "MD. ABDUL SHAFIZ, KHAMMAM DIST.",
+              "respondent": "THE APGENCO., HYDERABAD, & ANR."
+            }
+          ],
+          "id": 846,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 20516/2013",
+              "petitioner": "B.VENKATESWARLU,KHAMMAM DIST,& 12",
+              "respondent": "APPGCL,M.D,HYD,&ANOT;"
+            }
+          ],
+          "id": 847,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 20525/2013",
+              "petitioner": "SYED KHAJA MIYA,",
+              "respondent": "THE M.D.,APGENCO., & ANOTHER"
+            }
+          ],
+          "id": 848,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 20526/2013",
+              "petitioner": "MAHAMMAD MOHISINAAHAMMED, KHAMMAM DIST",
+              "respondent": "M.D., A.P. GENCO, HYDERABAD & ANR"
+            }
+          ],
+          "id": 849,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 20533/2013",
+              "petitioner": "N. KALYANI, KHAMMAM DT. & 2 OT",
+              "respondent": "M.D., APGENCO., HYD & ANR"
+            }
+          ],
+          "id": 850,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 20573/2013",
+              "petitioner": "MARSAKATLA RAMBABU, KHAMMAM DIST",
+              "respondent": "M.D., AP.GENCO, HYD & ANO"
+            }
+          ],
+          "id": 851,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 20646/2013",
+              "petitioner": "MD. ABDUL RASOOL, KHAMMAM DT.",
+              "respondent": "M.D., APGENCO, HYD & ANR"
+            }
+          ],
+          "id": 852,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 20649/2013",
+              "petitioner": "P.KUMAR, PALONCHA MANDAL,KHAMMAM DISTRICT",
+              "respondent": "THE M.D., APGENCO., & ANOTHER"
+            }
+          ],
+          "id": 853,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 20750/2013",
+              "petitioner": "P. RAMESH, KHAMMAM DIST.",
+              "respondent": "THE AP.GENCO.,HYDERABAD, & ANR."
+            }
+          ],
+          "id": 857,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 20751/2013",
+              "petitioner": "L.PRASAD, KHAMMAM DISTRICT",
+              "respondent": "THE M.D., APGENCO., & ANOTHER"
+            }
+          ],
+          "id": 858,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 20752/2013",
+              "petitioner": "K.VIJAYA DURGA RAO,KHAMMAM DIST",
+              "respondent": "APGENCO,M.D,HYD,&ANOT;"
+            }
+          ],
+          "id": 859,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 20753/2013",
+              "petitioner": "N. UMAMAHESWARA RAO, KHAMMAM DT.",
+              "respondent": "M.D., APGENCO., HYD & ANR"
+            }
+          ],
+          "id": 860,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 20754/2013",
+              "petitioner": "M VENKATA LENIN BABU, KHAMMAM DIST",
+              "respondent": "M.D., A.P.GENCO, HYDERABAD & ANR"
+            }
+          ],
+          "id": 861,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 20769/2013",
+              "petitioner": "M.SRINIVASULU, MAHABUBNAGAR DIST",
+              "respondent": "A.P. GENCO, HYD & ANOTHER"
+            }
+          ],
+          "id": 862,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 20770/2013",
+              "petitioner": "B. BHARATH BABU, KHAMMAM DIST.",
+              "respondent": "M.D., AP GENCO, HYD. & ANO."
+            }
+          ],
+          "id": 863,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 20815/2013",
+              "petitioner": "A.GANGADHAR RAO,KHAMMAM DIST",
+              "respondent": "APGENCO,M.D,HYD,&ANOT;"
+            }
+          ],
+          "id": 867,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 20832/2013",
+              "petitioner": "M.KOTESWARA RAO, KHAMMAM DIST",
+              "respondent": "A.P.GENCO, HYD & ANOTHER"
+            }
+          ],
+          "id": 868,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 20863/2013",
+              "petitioner": "P.SURESH KUMAR, & ANOTHER",
+              "respondent": "THE M.D., APGENCO., & ANOTHER"
+            }
+          ],
+          "id": 869,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 20874/2013",
+              "petitioner": "DUBASI SHIVA SHANKAR, WARANGAL DIST",
+              "respondent": "APGENCO, HYD & ANOTHER"
+            }
+          ],
+          "id": 870,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 20997/2013",
+              "petitioner": "B. ANIL KUMAR, KHAMMAM DIST.",
+              "respondent": "M.D., AP GENCO, HYD. & ANO."
+            }
+          ],
+          "id": 872,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 20999/2013",
+              "petitioner": "B.DILIP RAJESH,",
+              "respondent": "THE M.D., APGENCO., HYDERABAD & ANOTHER"
+            }
+          ],
+          "id": 873,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 21006/2013",
+              "petitioner": "T. VENKATESWARLU, KHAMMAM DIST",
+              "respondent": "M.D., APGENCO, HYD & ANO"
+            }
+          ],
+          "id": 874,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 21052/2013",
+              "petitioner": "K. RAMESH, KHAMMAM DT.",
+              "respondent": "M.D., APGENCO, HYD & ANR"
+            }
+          ],
+          "id": 875,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 21091/2013",
+              "petitioner": "R. SUBHASH, WARANGAL DISTRICT",
+              "respondent": "MD, APGENCO, VIDYUTH SOUDHA, HYDERABAD & ANOTHER"
+            }
+          ],
+          "id": 876,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 21421/2013",
+              "petitioner": "G. NAGARAJU, KHAMMAM DIST.",
+              "respondent": "M.D., AP GENCO, HYD. & ANO."
+            }
+          ],
+          "id": 877,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 21424/2013",
+              "petitioner": "V.RAMLAXMAN RAO,KHAMMAM DIST",
+              "respondent": "APGENCO,M.D,HYD,&ANOT;"
+            }
+          ],
+          "id": 878,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 21570/2013",
+              "petitioner": "MALEMPATI NAVABHARINIKA, KHAMMAM DIST.",
+              "respondent": "M.D., APGENCO, HYD. & ANO."
+            }
+          ],
+          "id": 879,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 21771/2013",
+              "petitioner": "B. SURESH, KHAMMAM DIST",
+              "respondent": "M.D., APGENCO, HYD & ANO"
+            }
+          ],
+          "id": 880,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 21995/2013",
+              "petitioner": "BUDIDA NAVEEN GOUD & 10 OTHERS",
+              "respondent": "THE MANAGING DIRECTOR, AP POWER GENERATION CORPN.LTD & 2"
+            }
+          ],
+          "id": 881,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 22022/2013",
+              "petitioner": "GUDDETI SHYAM KUMAR, KARIMNAGAR DISTRICT",
+              "respondent": "MD, APGENCO, HYDERABAD & ANOTHER"
+            }
+          ],
+          "id": 882,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 22031/2013",
+              "petitioner": "S MAHESH, KHAMMAM DIST",
+              "respondent": "CHAIRMAN & M.D., A.P.GENCO, HYD & 2 OTHERS"
+            }
+          ],
+          "id": 883,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 22036/2013",
+              "petitioner": "PRASAD,WRN DIST,&ANOT;",
+              "respondent": "APGENCO,M.D,HYD,& 3"
+            }
+          ],
+          "id": 884,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 22045/2013",
+              "petitioner": "D. CHAITANYA KUMARACHARY, WARANGAL DT.",
+              "respondent": "M.D., APGENCO., HYD & ANR"
+            }
+          ],
+          "id": 885,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 22101/2013",
+              "petitioner": "THOTA SURESH GOUD, KARIMNAGAR DIST",
+              "respondent": "M.D., A.P. GENCO, HYDERABAD & ANR"
+            }
+          ],
+          "id": 887,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 22118/2013",
+              "petitioner": "NAGARAJAN KALYANA,NALGONDA DIST",
+              "respondent": "APGENCO,M.D,HYD,&ANOT;"
+            }
+          ],
+          "id": 889,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 22150/2013",
+              "petitioner": "NAGUR MEERA SHAIK, NALGONDA DIST",
+              "respondent": "MD, AP GENCO, HYD & ANOTHER"
+            }
+          ],
+          "id": 890,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 22207/2013",
+              "petitioner": "BALARAM,",
+              "respondent": "THE M.D., APGENCO., HYDERABAD & ANOTHER"
+            }
+          ],
+          "id": 891,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 22236/2013",
+              "petitioner": "B. RAMU, KHAMMAM DISTRICT",
+              "respondent": "MD, AP GENCO, HYDERABAD & ANOTHER"
+            }
+          ],
+          "id": 892,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 22248/2013",
+              "petitioner": "KARRAVULA VENKATASWAMY, KARIMNAGAR DIST.",
+              "respondent": "THE APGENCO.,HYDERABAD, & 2 OTRS."
+            }
+          ],
+          "id": 893,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 22264/2013",
+              "petitioner": "SAMALA VENKATESWARLU, KHAMMAM DIST",
+              "respondent": "MD, THE APGENCO, HYD & ANOTHER"
+            }
+          ],
+          "id": 895,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 22380/2013",
+              "petitioner": "G. DHANJILAL, KHAMMAM DIST.",
+              "respondent": "M.D., AP GENCO, HYD. & ANO."
+            }
+          ],
+          "id": 896,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 22381/2013",
+              "petitioner": "SK.ALEEM,KHAMMAM DIST",
+              "respondent": "APGENCO,M.D,HYD,&ANOT;"
+            }
+          ],
+          "id": 897,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 22393/2013",
+              "petitioner": "RANI,WRN DIST",
+              "respondent": "APGENCO,M.D,HYD,&ANOT;"
+            }
+          ],
+          "id": 898,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 22443/2013",
+              "petitioner": "E. RAJU, KHAMMAM DISTRICT",
+              "respondent": "MD, AP GENCO, HYDERABAD & ANOTHER"
+            }
+          ],
+          "id": 899,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 22513/2013",
+              "petitioner": "M.VENKATA RAMANA,KHAMMAM DIST",
+              "respondent": "APGENCO,M.D,HYD,&ANOT;"
+            }
+          ],
+          "id": 900,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 22531/2013",
+              "petitioner": "T. VENKATA KRISHNA RAO, KHAMMAM DISTRICT",
+              "respondent": "MD, AP GENCO, VIDYUTH SOUDHA, HYDERABAD & ANOTHER"
+            }
+          ],
+          "id": 901,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 22579/2013",
+              "petitioner": "A. RAJENDRA PRASAD, KHAMMAM DIST",
+              "respondent": "M.D., APGENCO, HYD & ANO"
+            }
+          ],
+          "id": 903,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 22591/2013",
+              "petitioner": "K. EDUKONDALU, KHAMMAM DIST.",
+              "respondent": "M.D., AP GENCO, HYD. & ANO."
+            }
+          ],
+          "id": 904,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 22593/2013",
+              "petitioner": "G.ANITHA,",
+              "respondent": "THE M.D,.APGENCO., HYDERABAD & ANOTHER"
+            }
+          ],
+          "id": 905,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 22608/2013",
+              "petitioner": "ANDE RAKESH, KHAMMAM DIST",
+              "respondent": "MD, APGENCO, HYD & ANOTHER"
+            }
+          ],
+          "id": 907,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 22609/2013",
+              "petitioner": "MD. AFSAR, KARIMNAGAR DIST",
+              "respondent": "M.D., APGENCO, HYD & ANO"
+            }
+          ],
+          "id": 908,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 22610/2013",
+              "petitioner": "ERUGU RAJU, KHAMMAM DISTRICT",
+              "respondent": "MD, APGENCO, HYDERABAD & ANR"
+            }
+          ],
+          "id": 909,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 22734/2013",
+              "petitioner": "GUJJA SRINIVAS,KHAMMAM DIST",
+              "respondent": "APGENCO,M.D,HYD,&ANOT;"
+            }
+          ],
+          "id": 910,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 22739/2013",
+              "petitioner": "A. RAMAIAH, KARIMNAGAR DIST & ANOTHER",
+              "respondent": "M.D., APGENCO, HYD & ANO"
+            }
+          ],
+          "id": 911,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 23000/2013",
+              "petitioner": "MD. ABDUL KHADAR, MAHABUBNAGAR DIST",
+              "respondent": "M.D., APGENCO, HYD & ANO"
+            }
+          ],
+          "id": 914,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 23090/2013",
+              "petitioner": "S.RAJESHYAM, & 9 OTHERS",
+              "respondent": "THE M.D,.AP POWER GENERATION CORPN.LTD & 2 OTHERS"
+            }
+          ],
+          "id": 915,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 23250/2013",
+              "petitioner": "MOHAMMAD MHISINAAHAMMED, KHAMMAM DIST",
+              "respondent": "M.D, APGENCO., HYD & ANO"
+            }
+          ],
+          "id": 916,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 23405/2013",
+              "petitioner": "S. RAVI KIRAN, KHAMMAM DIST.",
+              "respondent": "THE AP.GENCO.,HYDERABAD, & ANR."
+            }
+          ],
+          "id": 917,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 23408/2013",
+              "petitioner": "MD. IQSANI PASHA, KHAMMAM DISTRICT",
+              "respondent": "MD, AP GENCO, HYDERABAD & ANOTHER"
+            }
+          ],
+          "id": 918,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 23410/2013",
+              "petitioner": "G. SRIHARI, WARANGAL DIST.",
+              "respondent": "M.D., AP GENCO, HYD. & ANO."
+            }
+          ],
+          "id": 919,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 23534/2013",
+              "petitioner": "AVUKU VENKATESWARLU, KHAMMAM DT.",
+              "respondent": "M.D., APGENCO, HYD & ANR"
+            }
+          ],
+          "id": 921,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 23616/2013",
+              "petitioner": "CH. PURNACHANDER, WARANGAL DT. & 19 OT",
+              "respondent": "M.D., APGENCO., HYD & ANR"
+            }
+          ],
+          "id": 922,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 25126/2013",
+              "petitioner": "V. VASANTHA, KARIMNAGAR DT.",
+              "respondent": "CHAIRMAN & M.D., HYD & 3 OT"
+            }
+          ],
+          "id": 923,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 26539/2013",
+              "petitioner": "SRIPATHI PRABHAKAR, KARIMNAGAR DIST",
+              "respondent": "M.D., AP GENCO, HYDERABAD & ANR"
+            }
+          ],
+          "id": 926,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 26781/2013",
+              "petitioner": "SANGLOTHU RAM PRASAD,",
+              "respondent": "THE M.D., APGENCO., & ANOTHER"
+            }
+          ],
+          "id": 928,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 30018/2013",
+              "petitioner": "B. CHIRANJEEVI, WARANGAL DIST",
+              "respondent": "M.D., APGENCO., HYD & ANO"
+            }
+          ],
+          "id": 929,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 32264/2013",
+              "petitioner": "G KRISHNAIAH, KHAMMAM & 12 OTHERS",
+              "respondent": "M.D., A.P.GENCO, HYD & ANR"
+            }
+          ],
+          "id": 931,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 35459/2013",
+              "petitioner": "SHAIK AKBAR, WARANGAL",
+              "respondent": "MD, AP GENCO, HYD & ANOTHER"
+            }
+          ],
+          "id": 932,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 36467/2013",
+              "petitioner": "KOMMU NARESH & 4 OTHERS",
+              "respondent": "THE CHAIRMAN & M.D., APGENCO., & 4 OTHERS"
+            }
+          ],
+          "id": 935,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 37761/2013",
+              "petitioner": "A.OM PRAKASH CHARY,",
+              "respondent": "THE M.D., AP GENCO., & ANOTHER"
+            }
+          ],
+          "id": 936,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 38832/2013",
+              "petitioner": "VENKATESWARLU, MAHABUBNAGAR DIST",
+              "respondent": "M.D., A.P.GENCO, HYDERABAD & ANR"
+            }
+          ],
+          "id": 937,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 39362/2013",
+              "petitioner": "THAMMALLA VENKATESWARA RAO & 7 ORS.",
+              "respondent": "M.D., AP GENCO, HYD. & ANO."
+            }
+          ],
+          "id": 938,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 39401/2013",
+              "petitioner": "KASIMKOTA RAJU, KRISHNA DIST & 3 OTHERS",
+              "respondent": "M.D., APGENCO, HYD & ANO"
+            }
+          ],
+          "id": 939,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 3064/2014",
+              "petitioner": "VELADHANDI KRISHNA PRASAD, KHAMMAM DIST.",
+              "respondent": "THE AP.GENCO.,HYDERABAD, & ANR."
+            }
+          ],
+          "id": 940,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 4325/2014",
+              "petitioner": "BAGAM NARESH, KHAMMAM DIST.",
+              "respondent": "M.D., AP GENCO, HYD. & ANO."
+            }
+          ],
+          "id": 941,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 4336/2014",
+              "petitioner": "GODLA NAGARJUN, KHAMMAM DIST",
+              "respondent": "M.D., APGENCO., HYD & ANR"
+            }
+          ],
+          "id": 942,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 4406/2014",
+              "petitioner": "NAMBURI SRIKANTH,",
+              "respondent": "THE M.D.,AP GENCO.,& ANOTHER"
+            }
+          ],
+          "id": 943,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 4426/2014",
+              "petitioner": "KUSU LAKSHMAN RAO, KHAMMAM DIST",
+              "respondent": "MD, AP GENCO, HYD & ANOTHER"
+            }
+          ],
+          "id": 944,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 5995/2014",
+              "petitioner": "UNDETI JAYA RAJU,KHAMMAM DIST,& 14",
+              "respondent": "GOVT.OF AP,SCY,ENERGY,HYD,& 2"
+            }
+          ],
+          "id": 945,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 6675/2014",
+              "petitioner": "G. KRISHNAIAH, KHAMMAM DISTRICT & 5 OTHERS",
+              "respondent": "MD, APGENCO, HYDERABAD & 4 OTHERS"
+            }
+          ],
+          "id": 947,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 6683/2014",
+              "petitioner": "SHAIK SABEER, KHAMMAM DIST., & 3 OTRS.",
+              "respondent": "THE A.P.POWER GEN.CO.,HYDERABAD, & ANR."
+            }
+          ],
+          "id": 948,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 7240/2014",
+              "petitioner": "DARLA SHOBHA RANI,",
+              "respondent": "THE M.D,.AP GENCO., & ANOTHER"
+            }
+          ],
+          "id": 949,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 8064/2014",
+              "petitioner": "M. SRINIVASA RAO, & ANOTHER,",
+              "respondent": "THE APGENCO., REP. BY ITS MD. HYD., & ANOTHER,"
+            }
+          ],
+          "id": 952,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 9927/2014",
+              "petitioner": "SHAIK GUMSHA VALI,",
+              "respondent": "THE AP GENCO., &  ANOTHER,"
+            }
+          ],
+          "id": 953,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 11237/2014",
+              "petitioner": "S. SRINADH, KHAMMAM DISTRICT & 4 OTHERS",
+              "respondent": "MD, APGENCO., HYDERABAD & ANOTHER"
+            }
+          ],
+          "id": 955,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 12175/2014",
+              "petitioner": "B.RAGHUPATHI, WARANGAL DIST",
+              "respondent": "MD, AP GENCO, HYDERABAD & ANOTHER"
+            }
+          ],
+          "id": 956,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 13068/2014",
+              "petitioner": "M. SRINIVAS & ANO.",
+              "respondent": "M.D, AP GENCO, HYD. & ANO."
+            }
+          ],
+          "id": 957,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 17284/2014",
+              "petitioner": "MOHAMMAD ABDUL ALEEM, KHAMMAM DISTRICT & ANR",
+              "respondent": "MD, TG GENCO, HYDERABAD & ANOTHER"
+            }
+          ],
+          "id": 958,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 17707/2014",
+              "petitioner": "R.PULI RAJU, WARANGAL DISTRICT & ANOTHER",
+              "respondent": "MD, TG POWER GENCO., HYDERABAD & ANOTHER"
+            }
+          ],
+          "id": 959,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 22033/2014",
+              "petitioner": "THATI SATYANARYANA",
+              "respondent": "THE TG., POWER GENERAATION CORPORAITON LTD AND 3 OTHERS"
+            }
+          ],
+          "id": 961,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 22034/2014",
+              "petitioner": "BATTULA DILIP RAJESH, KHAMMAM DIST.",
+              "respondent": "M.D., TELANGANA POWER GEN. CORP., & 3 ORS."
+            }
+          ],
+          "id": 962,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 22035/2014",
+              "petitioner": "SHAIK SHAKEER PASHA, KHAMMAM DISTRICT",
+              "respondent": "MD, TELANGANA POWER GENERATION CORP.LTD, HYD & 3 OTHERS"
+            }
+          ],
+          "id": 963,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 22036/2014",
+              "petitioner": "S.SURYAPRAKASHA RAO",
+              "respondent": "TPGCL,M.D,HYD,& 3"
+            }
+          ],
+          "id": 964,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 22037/2014",
+              "petitioner": "KOTWAL ANANDA KUMAR, KHAMMAM DIST",
+              "respondent": "M.D., TELANGANA POWER GENERATION CORP LTD., HYD & 3 OT"
+            }
+          ],
+          "id": 965,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 22038/2014",
+              "petitioner": "K.RAVI KUMAR, & 5 OTHERS,",
+              "respondent": "THE TG PGCFL., REP. BY MD., HYD., & 3 OTHERS,"
+            }
+          ],
+          "id": 966,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 22740/2014",
+              "petitioner": "BHUKYA GANESH, KHAMMAM DISTRICT",
+              "respondent": "MD, TELANGANA POWER GENERATION CORP. LTD, HYDERABAD & ANOTHE"
+            }
+          ],
+          "id": 967,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 25821/2014",
+              "petitioner": "ALLADA RAMESH BABU, KHAMMAM DISTRICT",
+              "respondent": "MD, TELANGANA GENCO., HYDERABAD & ANOTHER"
+            }
+          ],
+          "id": 968,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 26417/2014",
+              "petitioner": "S. KUMARA SWAMY, KHAMMAM DIST",
+              "respondent": "MD, TELANGANA POWER GENCO, HYDERABAD & 3 OTHERS"
+            }
+          ],
+          "id": 969,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 28996/2014",
+              "petitioner": "KOTHAPALLI RAVI KUMAR",
+              "respondent": "THE CHAIRMAN & M.D.,TGCPL.,& 3 OTHERS"
+            }
+          ],
+          "id": 971,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 31304/2014",
+              "petitioner": "PATAN YAKUB KHAN",
+              "respondent": "APGENCO,M.D,HYD,& 3"
+            }
+          ],
+          "id": 973,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 31436/2014",
+              "petitioner": "POGULA UPENDER, KHAMMAM DIST",
+              "respondent": "M.D., APGENCO., HYD & 3 OT"
+            }
+          ],
+          "id": 974,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 33322/2014",
+              "petitioner": "PUTTI RAJAIAH, KHAMMAM DIST",
+              "respondent": "M.D., APGENCO., HYD & 3 OT"
+            }
+          ],
+          "id": 975,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 33550/2014",
+              "petitioner": "S.KUMARA SWAMI",
+              "respondent": "THE M.D., TELANGANA POWER GENERATION CORPN.LTD & 3 OTHERS"
+            }
+          ],
+          "id": 976,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 34831/2014",
+              "petitioner": "LADALLA SHANKAR GOUD, WARANGAL DIST",
+              "respondent": "MD, APGENCO, HYDERABAD & 3 OTHERS"
+            }
+          ],
+          "id": 978,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 10441/2015",
+              "petitioner": "BANOTHU BASHYA, & 5 OTHERS,",
+              "respondent": "THE AP GENCO., REP. BY MD., HYD., & 3 OTHERS,"
+            }
+          ],
+          "id": 979,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 35074/2015",
+              "petitioner": "K.SAI PARTHAVI, KADAPA, A.P.",
+              "respondent": "THE TS GENCO., HYD., & ANR."
+            }
+          ],
+          "id": 986,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 35120/2015",
+              "petitioner": "K.SAI HARSHITHA",
+              "respondent": "THE TS GENCO., & ANOTHER,"
+            }
+          ],
+          "id": 987,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 36972/2015",
+              "petitioner": "THUMULA BHASKAR RAO",
+              "respondent": "THE M.D., AP GENCO., & 3 OTHERS"
+            }
+          ],
+          "id": 989,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 36982/2015",
+              "petitioner": "S.SRINIVAS, WARANGAL DIST.",
+              "respondent": "M.D., AP GENCO, HYD. & 3 ORS."
+            }
+          ],
+          "id": 990,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 37194/2015",
+              "petitioner": "JUNNUTHULA JITHENDAR, KARIMNAGAR DIST.",
+              "respondent": "APGENCO.,HYDERABAD, & 3 OTRS."
+            }
+          ],
+          "id": 991,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 37214/2015",
+              "petitioner": "AREPALLY SATHISH, WARANGAL",
+              "respondent": "M.D., APGENCO., HYD & 3 OT"
+            }
+          ],
+          "id": 992,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 37215/2015",
+              "petitioner": "D.VIJAY KUMAR, WARANGAL DIST.",
+              "respondent": "M.D., AP GENCO, HYD. & 3 ORS."
+            }
+          ],
+          "id": 993,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 37220/2015",
+              "petitioner": "RACHAPALLI POCHAMALLU, WARANGAL DIST",
+              "respondent": "MD, AP GENCO, HYD & 3 OTHERS"
+            }
+          ],
+          "id": 994,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 37299/2015",
+              "petitioner": "S.RAJESWAR RAO",
+              "respondent": "THE AP., GENCO, AND 3 OTHERS"
+            }
+          ],
+          "id": 995,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 38291/2015",
+              "petitioner": "KYATHAM SWAMY",
+              "respondent": "THE AP GENCO., REP BY ITS MD AND 3 OTHERS"
+            }
+          ],
+          "id": 996,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 38354/2015",
+              "petitioner": "CHEELAM SIVA PRASAD",
+              "respondent": "APGENCO,M.D,HYD,& 3"
+            }
+          ],
+          "id": 997,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 38365/2015",
+              "petitioner": "R. AYYANNA, KHAMMAM DISTRICT",
+              "respondent": "MD, AP GENCO, HYDERABAD & 3 OTHERS"
+            }
+          ],
+          "id": 998,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 38402/2015",
+              "petitioner": "B.VIJAYA KUMAR",
+              "respondent": "THE AP GENCO., AND 3 OTHERS"
+            }
+          ],
+          "id": 999,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 38413/2015",
+              "petitioner": "MAMINDLA NAGARAJU, WARANGAL DIST",
+              "respondent": "M.D., APO GENCO., HYD & 3 OT"
+            }
+          ],
+          "id": 1000,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 38423/2015",
+              "petitioner": "MD. ABDILAZEEZ, KHAMMAM DISTRICT",
+              "respondent": "MD, AP GENCO, HYDERABAD & 3 OTHERS"
+            }
+          ],
+          "id": 1001,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 38428/2015",
+              "petitioner": "C.ASHOK",
+              "respondent": "THE AP GENCO., REP. BY MD., HYD., & 3 OTHERS,"
+            }
+          ],
+          "id": 1002,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 38510/2015",
+              "petitioner": "V.SAMPATH KUMAR",
+              "respondent": "THE CHAIRMAN & MD AND 2 OTHERS"
+            }
+          ],
+          "id": 1003,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 38882/2015",
+              "petitioner": "B.RAJENDER",
+              "respondent": "THE AP GENCO., REP. BY MD., HYD., & 3 OTHERS,"
+            }
+          ],
+          "id": 1004,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 39382/2015",
+              "petitioner": "MOHAMMED AZMATH, KHAMMAM DIST",
+              "respondent": "MD, AP GENCO, HYD & 3 OTHERS"
+            }
+          ],
+          "id": 1005,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 39387/2015",
+              "petitioner": "MD.AFSAR",
+              "respondent": "THE AP GENCO., REP. BY MD., HYD., & 3 OTHERS,"
+            }
+          ],
+          "id": 1006,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 39391/2015",
+              "petitioner": "GADAM NAGARAJU, KHAMMAM DIST",
+              "respondent": "MD, AP GENCO, HYD & 3 OTHERS"
+            }
+          ],
+          "id": 1007,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 39397/2015",
+              "petitioner": "SYED AMJAD",
+              "respondent": "THE AP., GENCO., AND 3 OTHERS"
+            }
+          ],
+          "id": 1008,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 39560/2015",
+              "petitioner": "SUDIPAKA VENKANNA BABU, KHAMMAM DIST",
+              "respondent": "MD, AP GENCO, HYDERABAD & 3 OTHERS"
+            }
+          ],
+          "id": 1009,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 39604/2015",
+              "petitioner": "CHITLA CHANDRAIAH, WARANGAL DIST",
+              "respondent": "M.D., AP GENCO, HYD & 3 OT"
+            }
+          ],
+          "id": 1010,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 39633/2015",
+              "petitioner": "GATTIGUNDE PRAVEEN KUMAR, KHAMMAM DIST.",
+              "respondent": "M.D., AP GENCO, HYD. & 3 ORS."
+            }
+          ],
+          "id": 1012,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 39657/2015",
+              "petitioner": "L.ASHOK KUMAR",
+              "respondent": "THE AP., GENCO, AND 3 OTHERS"
+            }
+          ],
+          "id": 1013,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 39661/2015",
+              "petitioner": "PINNINTI JITHENDER RAO, WARANGAL DIST.",
+              "respondent": "M.D., AP GENCO, HYD. & 3 ORS."
+            }
+          ],
+          "id": 1014,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 39674/2015",
+              "petitioner": "MALOTH CHANDRASEKHAR, KHAMMAM DIST.",
+              "respondent": "M.D., AP GENCO, HYD. & 3 ORS."
+            }
+          ],
+          "id": 1015,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 39683/2015",
+              "petitioner": "GUNDELLI HARI KRISHNA, WARANGAL DISTRICT",
+              "respondent": "MD, AP GENCO., BIDYUTH SOUDHA, HYDERABAD & 3 OTHERS"
+            }
+          ],
+          "id": 1016,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 39720/2015",
+              "petitioner": "K.SUMAN",
+              "respondent": "APGENCO,M.D,HYD,& 3"
+            }
+          ],
+          "id": 1017,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 39730/2015",
+              "petitioner": "s.ravi and 4 others",
+              "respondent": "THE TGPGCLTD., REP. BY CHAIRMAN & MD., & 2 OTHERS,"
+            }
+          ],
+          "id": 1018,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 39777/2015",
+              "petitioner": "NALLA LINGA REDDY, KARIMNAGAR DIST.",
+              "respondent": "THE AP GENCO., HYDERABAD, & 3 OTRS."
+            }
+          ],
+          "id": 1019,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 39812/2015",
+              "petitioner": "S.DARMA RAO, WARANGAL DIST",
+              "respondent": "AP GENCO, HYD & 3 OTHERS"
+            }
+          ],
+          "id": 1020,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 39834/2015",
+              "petitioner": "KATHULA GANESH REDDY, WARANGAL DIST.",
+              "respondent": "M.D., AP GENCO, HYD. & 3 ORS."
+            }
+          ],
+          "id": 1021,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 39900/2015",
+              "petitioner": "D. VENKATESHWAR RAO, WARANGAL DISTRICT",
+              "respondent": "MD, APGENCO, HYDERABAD & 3 OTHERS"
+            }
+          ],
+          "id": 1022,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 39908/2015",
+              "petitioner": "B.VENUGOPAL RAO",
+              "respondent": "THE AP AGNCO., AND 3 OTHERS"
+            }
+          ],
+          "id": 1023,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 39914/2015",
+              "petitioner": "P. RAVINDER, WARANGAL DISTRICT",
+              "respondent": "MD, AP GENCO, KHIRATABAD, HYDERABAD & 3 OTHERS"
+            }
+          ],
+          "id": 1024,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 39950/2015",
+              "petitioner": "SHAKE SHAREEF, WARANGAL DISTRICT",
+              "respondent": "MD, AP GENCO, HYDERABAD & 3 OTHERS"
+            }
+          ],
+          "id": 1025,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 39952/2015",
+              "petitioner": "DAGGU SWAMY, WARANGAL DIST.,TS.",
+              "respondent": "THE AP GENCO, HYDERABAD, & 3 OTRS."
+            }
+          ],
+          "id": 1026,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 40006/2015",
+              "petitioner": "BIREDDY SRIKANTH REDDY, KHAMMAM DIST.",
+              "respondent": "THE AP GENCO, HYDERABAD, & 3 OTRS."
+            }
+          ],
+          "id": 1027,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 40357/2015",
+              "petitioner": "B.RAMESH",
+              "respondent": "APGENCO,M.D,HYD,& 3"
+            }
+          ],
+          "id": 1028,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 40372/2015",
+              "petitioner": "BHUKYA JANARDHAN, KHAMMAM DIST",
+              "respondent": "M.D., AP GENCO., HYD & 3 OT"
+            }
+          ],
+          "id": 1029,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 40499/2015",
+              "petitioner": "N.JAMPAIAH",
+              "respondent": "APGENCO,M.D,HYD,& 3"
+            }
+          ],
+          "id": 1030,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 40810/2015",
+              "petitioner": "BHATTU MANGILAL, KHAMMAM DIST.",
+              "respondent": "M.D., TS GENCO, HYD. & ANO."
+            }
+          ],
+          "id": 1033,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 40833/2015",
+              "petitioner": "GUGULOTH SURESH, KHAMMAM DIST",
+              "respondent": "M.D., T.S. POWER GENERATION CORP LTD., HYD & ANO"
+            }
+          ],
+          "id": 1034,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 40841/2015",
+              "petitioner": "BUKYA VEERALAL, KHAMMAM DIST",
+              "respondent": "M.D., T.S. POWER GENERATION CROP., HYD & ANO"
+            }
+          ],
+          "id": 1035,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 40887/2015",
+              "petitioner": "MALOTH RAVI, KHAMMAM DIST",
+              "respondent": "M.D., T.S. GENCO., HYD & ANO"
+            }
+          ],
+          "id": 1036,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 40888/2015",
+              "petitioner": "JATOTH RAVI, KHAMMAM DIST.",
+              "respondent": "M.D., AP GENCO, HYD. & 3 ORS."
+            }
+          ],
+          "id": 1037,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 41216/2015",
+              "petitioner": "L.VEERANNA, KHAMMAM DISTRICT",
+              "respondent": "MD, TS GENCO., HYDERABAD & ANOTHER"
+            }
+          ],
+          "id": 1038,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 41226/2015",
+              "petitioner": "BUKYA MANGILAL",
+              "respondent": "THE M.D., TSGENCO.,& ANOTHER"
+            }
+          ],
+          "id": 1039,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 41954/2015",
+              "petitioner": "BHUKYA RAMESH, KHAMMAM DISTRICT",
+              "respondent": "MD, TSGENCO, HYDERABAD & ANOTHER"
+            }
+          ],
+          "id": 1041,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 41957/2015",
+              "petitioner": "K.SRINIVAS",
+              "respondent": "THE AP GENCO., REP. BY MD., HYD. & 3 OTHERS,"
+            }
+          ],
+          "id": 1042,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 690/2016",
+              "petitioner": "ALIVELU KALYAN, KHAMMAM DIST",
+              "respondent": "M.D., AP GENCO., HYD & 3 OT"
+            }
+          ],
+          "id": 1045,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 926/2016",
+              "petitioner": "T.SRINIVAS",
+              "respondent": "THE AP., GENCO.,REP BY ITS MD AND 3 OTHERS"
+            }
+          ],
+          "id": 1046,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 1155/2016",
+              "petitioner": "DHARAVATH PAPALAL",
+              "respondent": "THE TSGENCO, REP BY ITS MANAGING DIRECTOR & ANOTHER"
+            }
+          ],
+          "id": 1047,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 1157/2016",
+              "petitioner": "GUGULOTH RAMESH, KHAMMAM DIST",
+              "respondent": "M.D., TSGENCO., HYD & ANO"
+            }
+          ],
+          "id": 1048,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 12194/2016",
+              "petitioner": "J.BADAVATH",
+              "respondent": "THE AP. GENCO., AND 3 OTHERS"
+            }
+          ],
+          "id": 1050,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 14245/2016",
+              "petitioner": "CHITTIPOLU SHIVA PRASAD, WARANGAL DIST",
+              "respondent": "MD, AP GENCO, HYDERABAD & 3 OTHERS"
+            }
+          ],
+          "id": 1051,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 14304/2016",
+              "petitioner": "PODILI GAJAPATHI RAO, WARANGAL DIST",
+              "respondent": "M.D., AP GENCO., HYD & 3 OT"
+            }
+          ],
+          "id": 1052,
+          "stage": "FINAL HEARING"
+        }
+      ],
+      "cj1": "RAMESH RANGANATHAN",
+      "cj2": "T. RAJANI",
+      "ct_no": "COURT NO. 1"
+    },
+    {
+      "cases": [
+        {
+          "caseno": [
+            {
+              "case_id": "WP 5187/2017",
+              "petitioner": "PP COMPANY",
+              "respondent": "M/S BHARAT PERTOLEUM CORPORATION LTD.,(BPCL),REP. BY CHAIR&2"
+            }
+          ],
+          "id": 281,
+          "stage": "ADMISSION (CENTRAL GOVT.)"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 16486/2014",
+              "petitioner": "DR. KARTHEEK THOTA",
+              "respondent": "SRI VENKATESWARA INSTITUTE OF MEDICAL SCIENCE, AND 3 OTHERS"
+            }
+          ],
+          "id": 304,
+          "stage": "INTERLOCUTORY(EDUCATION)"
+        }
+      ],
+      "cj1": "C.PRAVEEN KUMAR",
+      "cj2": "U.DURGA PRASAD RAO",
+      "ct_no": "COURT NO. 4"
+    },
+    {
+      "cases": [
+        {
+          "caseno": [
+            {
+              "case_id": "WP 43978/2016",
+              "petitioner": "DR.G.C.SUBBA NAIDU, MEDAK DIST & ANOTHER",
+              "respondent": "SECY, REVENUE DEPT, HYDERABAD & 5 OTHERS"
+            }
+          ],
+          "id": 582,
+          "stage": "ADMISSION (REVENUE)"
+        }
+      ],
+      "cj1": "S.V.BHATT",
+      "cj2": "U.DURGA PRASAD RAO",
+      "ct_no": "COURT NO. 5"
+    },
+    {
+      "cases": [
+        {
+          "caseno": [
+            {
+              "case_id": "WP 15366/2011",
+              "petitioner": "G. YESTHER RANI, KHAMMAM (D'T)",
+              "respondent": "THE AP POWER GENERATION CORP. LTD. HYD. & 2 OTHERS."
+            }
+          ],
+          "id": 30,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 17058/2011",
+              "petitioner": "N. SRINIVASA MURTHY, HYD",
+              "respondent": "GOVT. OF A.P, ENDOWMENTS DEPT, HYD AND 3 OTHERS"
+            }
+          ],
+          "id": 48,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 17574/2011",
+              "petitioner": "I. JAGANNADHAM, VISAKHAPATNAM",
+              "respondent": "THE CENTRAL INDUSTRIAL SECURITY FORCE, CHENNAI & 3 OTHRS"
+            }
+          ],
+          "id": 53,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 19350/2011",
+              "petitioner": "MR. K. BABU RAO, HYDERABAD",
+              "respondent": "ANDHRA BANK, HYD & 2 OTHERS"
+            }
+          ],
+          "id": 74,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 30929/2011",
+              "petitioner": "KARANAM CHIRANJEEVULU & 3 OTHERS",
+              "respondent": "CHIEF ENGINEER, VTPS, KRISHNA DIST & ANOTHER"
+            }
+          ],
+          "id": 100,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 332/2010",
+              "petitioner": "N.ADI REDDY, NALGONDA DISTRICT",
+              "respondent": "THE GOVT OF AP., ENERGY DEPT., & 4 OTHERS"
+            }
+          ],
+          "id": 102,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 333/2010",
+              "petitioner": "SHAKAMUDI RAMU, NALGONDA DISTRICT",
+              "respondent": "THE GOVT. OF A.P. HYD & 4OTS"
+            }
+          ],
+          "id": 103,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 337/2010",
+              "petitioner": "K.PURUSHOTHAM RAJU, MEDAK DIST. & 6 OTHERS",
+              "respondent": "SPL. C.S. ENERGY DEPT. HYD & 4 OTHERS"
+            }
+          ],
+          "id": 104,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 7910/2010",
+              "petitioner": "J.NAGAIAH",
+              "respondent": "THE GOVT OF A.P & 4 OTHERS"
+            }
+          ],
+          "id": 126,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 8205/2010",
+              "petitioner": "A.VENKATA SWAMY, K'NAGAR DIST. & 9 OTHERS",
+              "respondent": "M.D. APGENCO, HYD & 2 OTHERS"
+            }
+          ],
+          "id": 128,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 16295/2010",
+              "petitioner": "K. SANTHOSHA RAO, PRAKASAM DISTRICT",
+              "respondent": "THE CHAIRMAN, CHITTOOR DISTRICT & 5 OTS"
+            }
+          ],
+          "id": 159,
+          "stage": "FINAL HEARING"
+        }
+      ],
+      "cj1": "P NAVEEN RAO",
+      "cj2": "U.DURGA PRASAD RAO",
+      "ct_no": "COURT NO. 6"
+    },
+    {
+      "cases": [
+        {
+          "caseno": [
+            {
+              "case_id": "WP 16060/2017",
+              "petitioner": "K. THIRUPATI, KARIMNAGAR DIST. & 2 OTHERS",
+              "respondent": "REGISTRAR, SATAVAHANA UNIVERSITY, KARIMNAGAR"
+            }
+          ],
+          "id": 24,
+          "stage": "ADMISSION (UNIVERSITIES)"
+        }
+      ],
+      "cj1": "M.S.RAMACHANDRA RAO",
+      "cj2": "U.DURGA PRASAD RAO",
+      "ct_no": "COURT NO. 10"
+    },
+    {
+      "cases": [
+        {
+          "caseno": [
+            {
+              "case_id": "WP 22770/2014",
+              "petitioner": "N. PURUSHOTHAM REDDY., & 38 OTHERS,",
+              "respondent": "PRL.SECY., HIGHER EDUCANTION DEPT., HYD., & 2 OTHERS,"
+            }
+          ],
+          "id": 98,
+          "stage": "INTERLOCUTORY (UNIVERSITIES)"
+        }
+      ],
+      "cj1": "M.S.RAMACHANDRA RAO",
+      "cj2": "U.DURGA PRASAD RAO",
+      "ct_no": "COURT NO. 10"
+    },
+    {
+      "cases": [
+        {
+          "caseno": [
+            {
+              "case_id": "WP 17527/2017",
+              "petitioner": "VENKATESH, HYD & 2 OTHERS",
+              "respondent": "T S TRANSMISSION CORPORATION LTD., HYD & ANOTHER"
+            },
+            {
+              "case_id": "WP 36087/2016",
+              "petitioner": "M.RAVINDER, HYD & ANOTHER",
+              "respondent": "CHARMAN & M.D., AP. TRANSMSSON CORP. LTD., HYD & 10 OT"
+            },
+            {
+              "case_id": "CC 2489/2016",
+              "petitioner": "M.RAVINDER, HYD DIST & ANOTHER",
+              "respondent": "D. PRABHAKAR RAO, HYD DIST & ANOTHER"
+            }
+          ],
+          "id": 132,
+          "stage": "ADMISSION (A P S E B)"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 21941/2013",
+              "petitioner": "DR.C.V.GURU RAO, WARANGAL DIST",
+              "respondent": "REGISTRAR, KAKATIYA UNIVERSITY, WARANGAL"
+            }
+          ],
+          "id": 153,
+          "stage": "ADMISSION (UNIVERSITIES)"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 10797/2017",
+              "petitioner": "DR. KONDAREDDY PRABHAKAR RAO, GUNTUR DIST & 10 OTHERS",
+              "respondent": "REGISTRAR, S.V.VETERINARY UNIVERSITY, TIRUPATI & 5 OTHERS"
+            }
+          ],
+          "id": 155,
+          "stage": "ADMISSION (UNIVERSITIES)"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 6275/2017",
+              "petitioner": "V SANTHOSHA LAXMI",
+              "respondent": "STATE OF TG,PRL.SCY,TRANSPORT,HYD,& 3"
+            }
+          ],
+          "id": 159,
+          "stage": "ADMISSION (TRANSPORT)"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 21869/2015",
+              "petitioner": "VEERANJANEYULU, MAHABOOBNAGAR DIST.",
+              "respondent": "TG.S.R.T.C., HYD., & 2 OTRS."
+            }
+          ],
+          "id": 161,
+          "stage": "ADMISSION (APSRTC)"
+        }
+      ],
+      "cj1": "M.S.RAMACHANDRA RAO",
+      "cj2": "U.DURGA PRASAD RAO",
+      "ct_no": "COURT NO. 10"
+    },
+    {
+      "cases": [
+        {
+          "caseno": [
+            {
+              "case_id": "WP 40849/2016",
+              "petitioner": "G DAYAKAR, NIRMAL DIST & ANOTHER",
+              "respondent": "PRL SECY, POWER & ENERGY, HYDERABAD & ANOTHER"
+            }
+          ],
+          "id": 226,
+          "stage": "INTERLOCUTORY (A P S E B)"
+        }
+      ],
+      "cj1": "M.S.RAMACHANDRA RAO",
+      "cj2": "U.DURGA PRASAD RAO",
+      "ct_no": "COURT NO. 10"
+    },
+    {
+      "cases": [
+        {
+          "caseno": [
+            {
+              "case_id": "WP 16535/2017",
+              "petitioner": "SING. COLL.",
+              "respondent": "GOVT .INDIAN MINISTRY OF LABOUR & EMPLOMENT, JHARKHAND & AN"
+            }
+          ],
+          "id": 267,
+          "stage": "INTERLOCUTORY(CENTRAL GOVT.)"
+        }
+      ],
+      "cj1": "M.S.RAMACHANDRA RAO",
+      "cj2": "U.DURGA PRASAD RAO",
+      "ct_no": "COURT NO. 10"
+    },
+    {
+      "cases": [
+        {
+          "caseno": [
+            {
+              "case_id": "WP 34853/2014",
+              "petitioner": "DR. R. NAGI REDDY, WARANGAL DIST.",
+              "respondent": "PRL. SECY., EDUCATION DEPT. & 3 ORS."
+            }
+          ],
+          "id": 326,
+          "stage": "ADMISSION (UNIVERSITIES)"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 6161/2014",
+              "petitioner": "L.RAVINDAR,HYD,& 2",
+              "respondent": "STATE OF AP,C.S.,SCY,HYD,&ANOT;"
+            }
+          ],
+          "id": 356,
+          "stage": "INTERLOCUTORY(CIVIL SUPPLIES)"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 23250/2012",
+              "petitioner": "D. SRINIVASULU, KHAMMAM DIST., & 11 OTRS.",
+              "respondent": "THE APGENCO.,REP.BY M.D., HYDERABAD, & 5 OTRS."
+            }
+          ],
+          "id": 359,
+          "stage": "INTERLOCUTORY (A P S E B)"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 18462/2015",
+              "petitioner": "G.KISHAN, KHAMMAM DIST & 15 OTHERS",
+              "respondent": "MD, TSPGC, HYD & 3 OTHERS"
+            }
+          ],
+          "id": 361,
+          "stage": "INTERLOCUTORY (A P S E B)"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 26737/2014",
+              "petitioner": "M/S. PRAGA TOOLS LTD., HYD.",
+              "respondent": "SRI K. ASHOK KUMAR & 58 ORS."
+            },
+            {
+              "case_id": "WP 32161/2015",
+              "petitioner": "S.V.G.K.MURALIDHAR",
+              "respondent": "M/S.PRAGA TOOLS LTD,M.D,HYD,&ANOT;"
+            },
+            {
+              "case_id": "WP 32151/2015",
+              "petitioner": "CH.JAGANADHAM,",
+              "respondent": "M/S PRAGA TOOLS LTD., & ANOTHER,"
+            },
+            {
+              "case_id": "WP 32255/2015",
+              "petitioner": "G. RAJ KUMAR, HYDERABAD",
+              "respondent": "MD, M/S.PRAGA TOOLS LTD., HYDERABAD & ANOTHER"
+            },
+            {
+              "case_id": "WP 32388/2015",
+              "petitioner": "M.SRINIVAS",
+              "respondent": "M/S.PRAGA TOOLS LTD,M.D,HYD,&ANOT;"
+            },
+            {
+              "case_id": "WP 32145/2015",
+              "petitioner": "D.NARESH, SECUNDERABAD",
+              "respondent": "M/S PRAGA TOOLS LIMITED, HYD & ANOTHER"
+            },
+            {
+              "case_id": "WP 32245/2015",
+              "petitioner": "E.VEERA REDDY, SECUNDERABAD",
+              "respondent": "M/S. PRAGA TOOLS LIMITED & ANOTHER"
+            },
+            {
+              "case_id": "WP 24944/2015",
+              "petitioner": "G. RAJI REDDY,",
+              "respondent": "M/S PRAGA TOOLS LTD., & ANOTHER,"
+            },
+            {
+              "case_id": "WP 24944/2015",
+              "petitioner": "G. RAJI REDDY,",
+              "respondent": "M/S PRAGA TOOLS LTD., & ANOTHER,"
+            },
+            {
+              "case_id": "WP 24937/2015",
+              "petitioner": "M. DURGADAS REDDY, HYDERABAD.",
+              "respondent": "M/S. PRAGA TOOLS LTD., HYDERABAD, & ANR."
+            },
+            {
+              "case_id": "WP 24906/2015",
+              "petitioner": "K.MURALI",
+              "respondent": "M/S. PRAGA TOOLS LTD AND ANOTHERS"
+            },
+            {
+              "case_id": "WP 38736/2015",
+              "petitioner": "A. VENKATESH, SECUNDERABAD",
+              "respondent": "MD, M/S. PRAGA TOOLS LTD., HYD & ANOTHER"
+            },
+            {
+              "case_id": "WP 38774/2015",
+              "petitioner": "E.SHANKER",
+              "respondent": "M/S.PRAGA TOOLS LTD,M.D,HYD,&ANOT;"
+            },
+            {
+              "case_id": "WP 38760/2015",
+              "petitioner": "B. SRINIVAS, HYDERABAD",
+              "respondent": "MD, M/S. PRGA TOOLS LTD., HYD & ANOTHER"
+            },
+            {
+              "case_id": "WP 38753/2015",
+              "petitioner": "R.YESUBABU, HYDERABAD.",
+              "respondent": "M/S. PRAGA TOOLS LTD.,HYDERABAD, & ANR."
+            },
+            {
+              "case_id": "WP 25087/2015",
+              "petitioner": "P. NAGESH, SECUNDERABAD",
+              "respondent": "MD, M/S. PRAGA TOOLS LIMITED, HYD & ANOTHER"
+            },
+            {
+              "case_id": "WP 25077/2015",
+              "petitioner": "V. AMRNATH,",
+              "respondent": "M/S PRAGA TOOLS LTD., & ANOTHER,"
+            },
+            {
+              "case_id": "WP 24980/2015",
+              "petitioner": "Y. SUDHAKAR, HYD",
+              "respondent": "M/S. PRAGA TOOLS LTD., HYD & ANO"
+            },
+            {
+              "case_id": "WP 25080/2015",
+              "petitioner": "PALADI DEEPIKA, HYD",
+              "respondent": "M/S. PRAGA TOOLS LTD., HYD & ANO"
+            }
+          ],
+          "id": 377,
+          "stage": "FOR ADMISSION and HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 32161/2015",
+              "petitioner": "S.V.G.K.MURALIDHAR",
+              "respondent": "M/S.PRAGA TOOLS LTD,M.D,HYD,&ANOT;"
+            }
+          ],
+          "id": 378,
+          "stage": "FOR ADMISSION and HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 32151/2015",
+              "petitioner": "CH.JAGANADHAM,",
+              "respondent": "M/S PRAGA TOOLS LTD., & ANOTHER,"
+            }
+          ],
+          "id": 379,
+          "stage": "FOR ADMISSION and HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 32255/2015",
+              "petitioner": "G. RAJ KUMAR, HYDERABAD",
+              "respondent": "MD, M/S.PRAGA TOOLS LTD., HYDERABAD & ANOTHER"
+            }
+          ],
+          "id": 380,
+          "stage": "FOR ADMISSION and HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 32388/2015",
+              "petitioner": "M.SRINIVAS",
+              "respondent": "M/S.PRAGA TOOLS LTD,M.D,HYD,&ANOT;"
+            }
+          ],
+          "id": 381,
+          "stage": "FOR ADMISSION and HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 32145/2015",
+              "petitioner": "D.NARESH, SECUNDERABAD",
+              "respondent": "M/S PRAGA TOOLS LIMITED, HYD & ANOTHER"
+            }
+          ],
+          "id": 382,
+          "stage": "FOR ADMISSION and HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 32245/2015",
+              "petitioner": "E.VEERA REDDY, SECUNDERABAD",
+              "respondent": "M/S. PRAGA TOOLS LIMITED & ANOTHER"
+            }
+          ],
+          "id": 383,
+          "stage": "FOR ADMISSION and HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 38736/2015",
+              "petitioner": "A. VENKATESH, SECUNDERABAD",
+              "respondent": "MD, M/S. PRAGA TOOLS LTD., HYD & ANOTHER"
+            }
+          ],
+          "id": 387,
+          "stage": "FOR ADMISSION and HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 38774/2015",
+              "petitioner": "E.SHANKER",
+              "respondent": "M/S.PRAGA TOOLS LTD,M.D,HYD,&ANOT;"
+            }
+          ],
+          "id": 388,
+          "stage": "FOR ADMISSION and HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 38760/2015",
+              "petitioner": "B. SRINIVAS, HYDERABAD",
+              "respondent": "MD, M/S. PRGA TOOLS LTD., HYD & ANOTHER"
+            }
+          ],
+          "id": 389,
+          "stage": "FOR ADMISSION and HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 38753/2015",
+              "petitioner": "R.YESUBABU, HYDERABAD.",
+              "respondent": "M/S. PRAGA TOOLS LTD.,HYDERABAD, & ANR."
+            }
+          ],
+          "id": 390,
+          "stage": "FOR ADMISSION and HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 18822/2017",
+              "petitioner": "D.AVULA",
+              "respondent": "DIRECTOR ( R.G.U.K.T) AND 3 OTHERS"
+            }
+          ],
+          "id": 397,
+          "stage": "INTERLOCUTORY (UNIVERSITIES)"
+        }
+      ],
+      "cj1": "M.S.RAMACHANDRA RAO",
+      "cj2": "U.DURGA PRASAD RAO",
+      "ct_no": "COURT NO. 10"
+    },
+    {
+      "cases": [
+        {
+          "caseno": [
+            {
+              "case_id": "WP 17136/2016",
+              "petitioner": "P.S. SASTURKAR & 8 ORS.",
+              "respondent": "DIR. GEN., N.C.C.& B.M., HARYANA STATE & 2 ORS."
+            }
+          ],
+          "id": 400,
+          "stage": "ADMISSION (OTHER SUBJECTS)"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 25361/2013",
+              "petitioner": "SAMUEL ANAND KUMAR, HYD",
+              "respondent": "DECCAN GRAMEENA BANK, HYD & 2 OTHERS"
+            }
+          ],
+          "id": 431,
+          "stage": "INTERLOCUTORY(CENTRAL GOVT.)"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 24935/2013",
+              "petitioner": "N. SESHU BABU, VISAKHAPATNAM",
+              "respondent": "GM, SBI, HYDERABAD & 5 OTHERS"
+            },
+            {
+              "case_id": "WP 34110/2013",
+              "petitioner": "N. SESHU BABU, VISAKHAPATNAM",
+              "respondent": "GM(NETWORK-III), SBI, HYDERABAD & 7 OTHERS"
+            }
+          ],
+          "id": 455,
+          "stage": "FOR ADMISSION and HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 34110/2013",
+              "petitioner": "N. SESHU BABU, VISAKHAPATNAM",
+              "respondent": "GM(NETWORK-III), SBI, HYDERABAD & 7 OTHERS"
+            }
+          ],
+          "id": 456,
+          "stage": "FOR ADMISSION and HEARING"
+        }
+      ],
+      "cj1": "M.S.RAMACHANDRA RAO",
+      "cj2": "U.DURGA PRASAD RAO",
+      "ct_no": "COURT NO. 10"
+    },
+    {
+      "cases": [
+        {
+          "caseno": [
+            {
+              "case_id": "WP 20066/2014",
+              "petitioner": "MANDALA LAKSHMANA RAO",
+              "respondent": "CISF,I.G,CHENNAI,& 2"
+            }
+          ],
+          "id": 516,
+          "stage": "ADMISSION (CENTRAL GOVT.)"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 8340/2015",
+              "petitioner": "K. KUMAR, MEDAK DIST",
+              "respondent": "DEPOT MANAGER, APSRTC., MEDAK DIST & ANO"
+            }
+          ],
+          "id": 538,
+          "stage": "INTERLOCUTORY (A P S R T C)"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 1098/2017",
+              "petitioner": "G SIVARAMA KRISHNA",
+              "respondent": "INSURANCE REGULATORY & DEV.AUTH. OF INDIA,HYD,& ANOT"
+            }
+          ],
+          "id": 553,
+          "stage": "INTERLOCUTORY (OTHER DEPARTMENTS)"
+        }
+      ],
+      "cj1": "M.S.RAMACHANDRA RAO",
+      "cj2": "U.DURGA PRASAD RAO",
+      "ct_no": "COURT NO. 10"
+    },
+    {
+      "cases": [
+        {
+          "caseno": [
+            {
+              "case_id": "WP 11257/2012",
+              "petitioner": "S VENKATESWAR RAO, SECUNDERABAD",
+              "respondent": "CHAIRMAN & MD., APGENCO., LTD., HYD & 2 OTHERS"
+            }
+          ],
+          "id": 605,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 10230/2013",
+              "petitioner": "K.V. SUBBA RAO, HYD",
+              "respondent": "CHAIRMAN & M.D., ANDHRA BANK &  2 OT"
+            }
+          ],
+          "id": 640,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 21427/2013",
+              "petitioner": "V VEERASWAMY, APGENCO, KHAMMAM DIST",
+              "respondent": "CHAIRMAN & M.D., A.P.GENCO, HYDERABAD & 3 OTHERS"
+            }
+          ],
+          "id": 645,
+          "stage": "FINAL HEARING"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 15519/2016",
+              "petitioner": "MS. MOHAMMAD SHABANA ANJUM, KHAMMAM DIST.",
+              "respondent": "TS.STATE POWER GEN.CORP.LTD., HYD.,& ANR."
+            }
+          ],
+          "id": 670,
+          "stage": "FINAL HEARING"
+        }
+      ],
+      "cj1": "M.S.RAMACHANDRA RAO",
+      "cj2": "U.DURGA PRASAD RAO",
+      "ct_no": "COURT NO. 10"
+    },
+    {
+      "cases": [
+        {
+          "caseno": [
+            {
+              "case_id": "WP 19841/2017",
+              "petitioner": "SUNITHA CHANDUPATLA, RR DIST",
+              "respondent": "PRL SECY, MUNICIPAL ADMN, HYDERABAD & 4 OTHERS"
+            }
+          ],
+          "id": 107,
+          "stage": "ADMISSION (MUNICIPAL ADMN.)"
+        }
+      ],
+      "cj1": "RAJA ELANGO",
+      "cj2": "U.DURGA PRASAD RAO",
+      "ct_no": "COURT NO. 11"
+    },
+    {
+      "cases": [
+        {
+          "caseno": [
+            {
+              "case_id": "WP 3996/2009",
+              "petitioner": "CH. VEERENDER",
+              "respondent": "UNION OF INDIA & 2 OTHERS"
+            }
+          ],
+          "id": 120,
+          "stage": "INTERLOCUTORY"
+        }
+      ],
+      "cj1": "SURESH KUMAR KAIT",
+      "cj2": "U.DURGA PRASAD RAO",
+      "ct_no": "COURT NO. 14"
+    },
+    {
+      "cases": [
+        {
+          "caseno": [
+            {
+              "case_id": "CRPMP 4396/2010",
+              "petitioner": "",
+              "respondent": ""
+            },
+            {
+              "case_id": "CRP 3306/2010",
+              "petitioner": "AKA RAJESWARA RAO (DIED) & 5 OTHERS",
+              "respondent": "MAJETI & CO., & 20 OTHERS"
+            }
+          ],
+          "id": 11,
+          "stage": ""
+        }
+      ],
+      "cj1": "M.S.K.JAISWAL",
+      "cj2": "",
+      "ct_no": "COURT NO. 25"
+    },
+    {
+      "cases": [
+        {
+          "caseno": [
+            {
+              "case_id": "WP 3017/2000",
+              "petitioner": "SRI B.UMAPATHY, HYDERABAD.",
+              "respondent": "A.P.T.C. A.P. LTD, HYDERABAD."
+            }
+          ],
+          "id": 60,
+          "stage": "FOR HEARING  (SERVICE MATTERS)"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 7223/2000",
+              "petitioner": "D.B.PAPA RAJU(DIED) PER LRS",
+              "respondent": "SINGARENI COLLIERIES CO. LTD., CHAIRMAN & MANAGING DIRECTOR"
+            }
+          ],
+          "id": 64,
+          "stage": "FOR HEARING  (SERVICE MATTERS)"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 10364/2000",
+              "petitioner": "K.L.RAJA KUMAR",
+              "respondent": "STATE BANK OF INDIA,TIRUPATHI"
+            }
+          ],
+          "id": 71,
+          "stage": "FOR HEARING  (SERVICE MATTERS)"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 12275/2000",
+              "petitioner": "E.VENKATESWARLU",
+              "respondent": "THE VICE CHAIRMAN & MANAGING DIRECTOR., A.P.S.R.T.C.,"
+            }
+          ],
+          "id": 72,
+          "stage": "FOR HEARING  (SERVICE MATTERS)"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 18781/2000",
+              "petitioner": "K.BIKSHAPATHI",
+              "respondent": "INDUSTRIAL TRIBUNAL-II"
+            }
+          ],
+          "id": 83,
+          "stage": "FOR HEARING  (SERVICE MATTERS)"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 19672/2000",
+              "petitioner": "S,NAGULAL KURNOOL",
+              "respondent": "TRANSCO OF A.P., LTD, ITS C&M.D;, HYD&ANR;"
+            }
+          ],
+          "id": 89,
+          "stage": "FOR HEARING  (SERVICE MATTERS)"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 25404/2000",
+              "petitioner": "M.RAJU",
+              "respondent": "GOVT.OF AP.EDU.DEPT.HYD.& 2 ORS"
+            }
+          ],
+          "id": 124,
+          "stage": "FOR HEARING  (SERVICE MATTERS)"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 25860/2000",
+              "petitioner": "G.ADTIYA",
+              "respondent": "THE PRESIDING OFFICER,"
+            }
+          ],
+          "id": 128,
+          "stage": "FOR HEARING  (SERVICE MATTERS)"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 4937/2002",
+              "petitioner": "SRI K.SATHYANARAYANA",
+              "respondent": "THE COMMISSIONER FOR COOPERATION&REGISTRAR; OF THE COOP. SOCY"
+            }
+          ],
+          "id": 151,
+          "stage": "FOR HEARING  (SERVICE MATTERS)"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 16193/2002",
+              "petitioner": "G.RAJAMOULI",
+              "respondent": "THE PRESIDING OFFICER"
+            }
+          ],
+          "id": 170,
+          "stage": "FOR HEARING  (SERVICE MATTERS)"
+        },
+        {
+          "caseno": [
+            {
+              "case_id": "WP 23686/2002",
+              "petitioner": "G.RAVINDER",
+              "respondent": "THE MANJEERA GRAMEENA BANK"
+            }
+          ],
+          "id": 176,
+          "stage": "FOR HEARING  (SERVICE MATTERS)"
+        }
+      ],
+      "cj1": "CHALLA KODANDA RAM",
+      "cj2": "",
+      "ct_no": "COURT NO. 30"
+    },
+    {
+      "cases": [
+        {
+          "caseno": [
+            {
+              "case_id": "WP 19292/2017",
+              "petitioner": "P. ANNAPURNAMMA, BHONGIR DIST & 5 OTHERS",
+              "respondent": "DIST. COLLECTOR, BHONGIR DIST & 2 OTHERS"
+            }
+          ],
+          "id": 506,
+          "stage": "ADMISSION (REVENUE-LA)"
+        }
+      ],
+      "cj1": "B.SIVA SANKARA RAO",
+      "cj2": "",
+      "ct_no": "COURT NO. 35"
+    }
+  ]
+}
