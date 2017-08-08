@@ -51,11 +51,11 @@ class CaseDetails():
         print "respondent:" + respondent.text
         return petitioner.text,respondent.text
 
-class FetchList():
+
+class FetchList:
 
     def __init__(self):
         self.test = "test"
-
 
     def get_dates(self):
         s = requests.Session()
@@ -93,9 +93,13 @@ class FetchList():
             print '--------'
             print court.text
             c['ct_no'] = court.text
-            c['cj1'] =  court.find_next('td', attrs = {'data-label': 'CORAM1'}).text.split('JUSTICE').pop().strip()
-            cj2 = court.find_next('td', attrs = {'data-label': 'CORAM2'})
-            c['cj2'] = cj2.text.split('JUSTICE').pop().strip() if cj2 else ''
+            cj1 = court.find_next('td', attrs = {'data-label': 'CORAM1'})
+            c['cj1'] =  cj1.text.split('JUSTICE').pop().strip()
+            cj2 = cj1.find_next('td')
+            if cj2.has_key('data-label') and cj2['data-label'] == 'CORAM2':
+                c['cj2'] = cj2.text.split('JUSTICE').pop().strip()
+            else:
+                c['cj2'] = ''
             cases = {}
             cur_stage = ''
             for court_sib in court.find_all_next('td'):
