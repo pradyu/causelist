@@ -6,6 +6,7 @@ from bs4 import BeautifulSoup
 from Queue import Queue
 from threading import Thread
 from xml.sax.saxutils import escape
+import argparse
 
 #try:
 #    from http.client import HTTPConnection # py3
@@ -13,7 +14,7 @@ from xml.sax.saxutils import escape
 #    from httplib import HTTPConnection # py2
 
 #logging.basicConfig(level=logging.DEBUG)
-NUMBER_OF_WORKERS = 10
+NUMBER_OF_WORKERS = 15
 SEARCH_TYPE_URL = 'http://hc.tap.nic.in/Hcdbs/searchtype.do'
 SEARCH_INPUT_URL = 'http://hc.tap.nic.in/Hcdbs/searchtypeinput.do'
 DATES_URL = 'http://hc.tap.nic.in/Hcdbs/getdates.jsp?listtype=D'
@@ -67,8 +68,12 @@ class CaseDetails():
 
 class FetchList:
 
-    def __init__(self):
-        self.test = "test"
+    def __init__(self, number_of_workers):
+        self.worker_queue = Queue()
+        for i in range(number_of_workers):
+            worker = CaseWorker(self.worker_queue)
+            worker.setDaemon(True)
+            worker.start()
 
     def get_dates(self, session=requests.Session()):
         r0 = session.post(SEARCH_DATES_URL, data = {'causelisttype': 'D'})
@@ -77,21 +82,13 @@ class FetchList:
         dates = resp.split('@')
         return dates[0]
 
-    def get_causelist(self, date):
+    def get_causelist(self, date, adv_codes):
         #HTTPConnection.debuglevel = 1
         s = requests.Session()
         self.get_dates(s)
         r2 = s.post(SEARCH_INPUT_URL, data = {'listdate': date, 'caset': 'advcdsearch'})
         print r2.cookies
-        #cookies = dict(jsessionid=r2.cookies['JSESSIONID'])
-        adv_codes = ['4199', '4121']
         court = {}
-        worker_queue = Queue()
-        for i in range(NUMBER_OF_WORKERS):
-            worker = CaseWorker(worker_queue)
-            worker.setDaemon(True)
-            worker.start()
-
         for adv_code in adv_codes:
             r3 = s.post(SEARCH_TYPE_URL, data={'advcd': adv_code})
             soup = BeautifulSoup(r3.text, 'html.parser')
@@ -114,10 +111,10 @@ class FetchList:
                     court[court_number]['cj2'] = ''
                 cases = {}
                 cur_stage = ''
-                self.get_cases_by_court(cases, court_data, cur_stage, worker_queue, adv_code)
+                self.get_cases_by_court(cases, court_data, cur_stage, self.worker_queue, adv_code)
                 court[court_number].setdefault('cases', {})
                 court[court_number]['cases'].update(cases)
-                worker_queue.join()
+                self.worker_queue.join()
         return court
 
     def get_cases_by_court(self, cases, court_data, cur_stage, worker_queue, adv_code):
@@ -142,18 +139,18 @@ class FetchList:
                     worker_queue.put(case_id)
                     case_id_processed = True
 
-    def convertToCauseListDocx(self):
-        fetchList = FetchList()
-        date = fetchList.get_dates()
-        causelist = fetchList.get_causelist(date)
+    def convertToCauseListDocx(self, adv_codes):
+        date = self.get_dates()
+        causelist = self.get_causelist(date, adv_codes)
         context = { 'causelist': causelist, 'date': date }
-        #print "printing the context:"
-        #print(json.dumps(context, sort_keys=True, indent=4))
         tpl=DocxTemplate('causelist_tmpl.docx')
         tpl.render(context)
         tpl.save(date + '.docx')
 
-fetchList = FetchList()
-fetchList.convertToCauseListDocx()
-caseDetails = CaseDetails()
-caseDetails.getCaseDetails('WP', '37427', '2013')
+parser = argparse.ArgumentParser(description='List of advocate codes')
+parser.add_argument('integers', metavar='N', type=int, nargs='+',
+                    help='List of advocate codes')
+args = parser.parse_args()
+
+fetchList = FetchList(NUMBER_OF_WORKERS)
+fetchList.convertToCauseListDocx(args.integers)
