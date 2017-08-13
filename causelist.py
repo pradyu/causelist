@@ -13,6 +13,7 @@ from xml.sax.saxutils import escape
 #    from httplib import HTTPConnection # py2
 
 #logging.basicConfig(level=logging.DEBUG)
+NUMBER_OF_WORKERS = 10
 SEARCH_TYPE_URL = 'http://hc.tap.nic.in/Hcdbs/searchtype.do'
 SEARCH_INPUT_URL = 'http://hc.tap.nic.in/Hcdbs/searchtypeinput.do'
 DATES_URL = 'http://hc.tap.nic.in/Hcdbs/getdates.jsp?listtype=D'
@@ -84,51 +85,45 @@ class FetchList:
         print r2.cookies
         #cookies = dict(jsessionid=r2.cookies['JSESSIONID'])
         adv_codes = ['4199', '4121']
-        r3 = s.post(SEARCH_TYPE_URL, data = {'advcd': '4199'})
-        soup = BeautifulSoup(r3.text, 'html.parser')
-        courts_data = soup.find_all('td', attrs = {DATA_LABEL: 'Court'})
-        causelist = []
+        court = {}
         worker_queue = Queue()
-        # Set up some threads to fetch the enclosures
-        for i in range(10):
+        for i in range(NUMBER_OF_WORKERS):
             worker = CaseWorker(worker_queue)
             worker.setDaemon(True)
             worker.start()
 
-        for court_data in courts_data:
-            court = {}
-            print '--------'
-            print court_data.text
-            court['ct_no'] = court_data.text
-            cj1 = court_data.find_next('td', attrs = {DATA_LABEL: JUDGE1_LABEL})
-            court['cj1'] =  cj1.text.split('JUSTICE').pop().strip()
-            cj2 = cj1.find_next('td')
-            if cj2.has_key(DATA_LABEL) and cj2[DATA_LABEL] == JUDGE2_LABEL:
-                court['cj2'] = cj2.text.split('JUSTICE').pop().strip()
-            else:
-                court['cj2'] = ''
-            cases = {}
-            cur_stage = ''
-            self.get_cases_by_court(cases, court_data, cur_stage, worker_queue)
+        for adv_code in adv_codes:
+            r3 = s.post(SEARCH_TYPE_URL, data={'advcd': adv_code})
+            soup = BeautifulSoup(r3.text, 'html.parser')
+            courts_data = soup.find_all('td', attrs = {DATA_LABEL: 'Court'})
+            causelist = []
+            # Set up some threads to fetch the enclosures
 
-            cases_to_list = []
-            worker_queue.join()
-            #print "cases:" + str(cases)
-            for key,val in cases.iteritems():
-                val['id'] = key
-                cases_to_list.append(val)
-            cases_to_list = sorted(cases_to_list, key = lambda x: x['id'])
-            print(json.dumps(cases_to_list, indent=4))
-            court['cases'] = cases_to_list
-            causelist.append(court)
-        #print(json.dumps(c_list, sort_keys=True, indent=4))
-        return causelist
+            for court_data in courts_data:
+                print '--------'
+                print court_data.text
+                court_number = court_data.text
+                court_number = int(court_number.split('COURT NO.').pop().strip())
+                court.setdefault(court_number, {})
+                cj1 = court_data.find_next('td', attrs = {DATA_LABEL: JUDGE1_LABEL})
+                court[court_number]['cj1'] =  cj1.text.split('JUSTICE').pop().strip()
+                cj2 = cj1.find_next('td')
+                if cj2.has_key(DATA_LABEL) and cj2[DATA_LABEL] == JUDGE2_LABEL:
+                    court[court_number]['cj2'] = cj2.text.split('JUSTICE').pop().strip()
+                else:
+                    court[court_number]['cj2'] = ''
+                cases = {}
+                cur_stage = ''
+                self.get_cases_by_court(cases, court_data, cur_stage, worker_queue, adv_code)
+                court[court_number].setdefault('cases', {})
+                court[court_number]['cases'].update(cases)
+                worker_queue.join()
+        return court
 
-    def get_cases_by_court(self, cases, court_data, cur_stage, worker_queue):
+    def get_cases_by_court(self, cases, court_data, cur_stage, worker_queue, adv_code):
         for court_sib in court_data.find_all_next('td'):
             # print "text:" + court_sib.text
-            if not court_sib.has_key(DATA_LABEL) or court_sib[DATA_LABEL] == JUDGE1_LABEL or court_sib[
-                DATA_LABEL] == JUDGE2_LABEL:
+            if not court_sib.has_key(DATA_LABEL) or court_sib[DATA_LABEL] == JUDGE1_LABEL or court_sib[DATA_LABEL] == JUDGE2_LABEL:
                 continue
             elif court_sib[DATA_LABEL] == 'Court':
                 break
@@ -137,11 +132,10 @@ class FetchList:
             elif court_sib[DATA_LABEL] == 'S.No':
                 case_id_processed = False
                 cur_sno = int(court_sib.text.strip('.'))
-                cases[cur_sno] = {"stage": cur_stage}
+                cases[cur_sno] = {"stage": cur_stage, 'adv_code': adv_code}
             elif court_sib[DATA_LABEL] == 'Case No.' or court_sib[DATA_LABEL] == 'Sub case No.':
                 # print "case_no:" + court_sib.text
-                if not (court_sib.text.startswith((IGNORED_CASE_TYPES))) and not (
-                    case_id_processed and SKIP_SAME_SERIAL_NO):
+                if not (court_sib.text.startswith((IGNORED_CASE_TYPES))) and not (case_id_processed and SKIP_SAME_SERIAL_NO):
                     case_id = {'case_id': court_sib.text}
                     cases[cur_sno].setdefault('caseno', []).append(case_id)
                     # Add to queue cases[cur_sno]
