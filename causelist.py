@@ -13,6 +13,18 @@ from xml.sax.saxutils import escape
 #    from httplib import HTTPConnection # py2
 
 #logging.basicConfig(level=logging.DEBUG)
+SEARCH_TYPE_URL = 'http://hc.tap.nic.in/Hcdbs/searchtype.do'
+SEARCH_INPUT_URL = 'http://hc.tap.nic.in/Hcdbs/searchtypeinput.do'
+DATES_URL = 'http://hc.tap.nic.in/Hcdbs/getdates.jsp?listtype=D'
+SEARCH_DATES_URL = 'http://hc.tap.nic.in/Hcdbs/searchdates.do'
+MAIN_INFO_URL = "http://hc.tap.nic.in/csis/MainInfo.jsp?mtype={}&mno={}&year={}"
+
+JUDGE2_LABEL = 'CORAM2'
+JUDGE1_LABEL = 'CORAM1'
+IGNORED_CASE_TYPES = '- -/-', '.', 'WPMP', 'WVMP', 'WAMP', 'CRLPMP'
+DATA_LABEL = 'data-label'
+SKIP_SAME_SERIAL_NO = True
+
 
 class CaseWorker(Thread):
     def __init__(self, q):
@@ -41,7 +53,7 @@ class CaseDetails():
         self.test = "test"
 
     def getCaseDetails(self, case_type, case_no, year):
-        res = requests.get("http://hc.tap.nic.in/csis/MainInfo.jsp?mtype={}&mno={}&year={}".format(case_type, case_no, year))
+        res = requests.get(MAIN_INFO_URL.format(case_type, case_no, year))
         #print res.text
         soup = BeautifulSoup(res.text, 'html.parser')
         pet = soup.find('b',text="PETITIONER")
@@ -57,10 +69,9 @@ class FetchList:
     def __init__(self):
         self.test = "test"
 
-    def get_dates(self):
-        s = requests.Session()
-        r0 = s.post('http://hc.tap.nic.in/Hcdbs/searchdates.do', data = {'causelisttype':'D'})
-        r = s.get('http://hc.tap.nic.in/Hcdbs/getdates.jsp?listtype=D')
+    def get_dates(self, session=requests.Session()):
+        r0 = session.post(SEARCH_DATES_URL, data = {'causelisttype': 'D'})
+        r = session.get(DATES_URL)
         resp = r.text.strip()
         dates = resp.split('@')
         return dates[0]
@@ -68,70 +79,74 @@ class FetchList:
     def get_causelist(self, date):
         #HTTPConnection.debuglevel = 1
         s = requests.Session()
-        r0 = s.post('http://hc.tap.nic.in/Hcdbs/searchdates.do', data = {'causelisttype':'D'})
-        r = s.get('http://hc.tap.nic.in/Hcdbs/getdates.jsp?listtype=D')
-        resp = r.text.strip()
-        dates = resp.split('@')
-        print dates[0]
-        r2 = s.post('http://hc.tap.nic.in/Hcdbs/searchtypeinput.do', data = {'listdate': date, 'caset': 'advcdsearch'})
+        self.get_dates(s)
+        r2 = s.post(SEARCH_INPUT_URL, data = {'listdate': date, 'caset': 'advcdsearch'})
         print r2.cookies
         #cookies = dict(jsessionid=r2.cookies['JSESSIONID'])
         adv_codes = ['4199', '4121']
-        r3 = s.post('http://hc.tap.nic.in/Hcdbs/searchtype.do', data = {'advcd': '4199'})
+        r3 = s.post(SEARCH_TYPE_URL, data = {'advcd': '4199'})
         soup = BeautifulSoup(r3.text, 'html.parser')
-        courts = soup.find_all('td', attrs = {'data-label': 'Court'})
-        c_list = []
-        q = Queue()
+        courts_data = soup.find_all('td', attrs = {DATA_LABEL: 'Court'})
+        causelist = []
+        worker_queue = Queue()
         # Set up some threads to fetch the enclosures
         for i in range(10):
-            worker = CaseWorker(q)
+            worker = CaseWorker(worker_queue)
             worker.setDaemon(True)
             worker.start()
 
-        for court in courts:
-            c = {}
+        for court_data in courts_data:
+            court = {}
             print '--------'
-            print court.text
-            c['ct_no'] = court.text
-            cj1 = court.find_next('td', attrs = {'data-label': 'CORAM1'})
-            c['cj1'] =  cj1.text.split('JUSTICE').pop().strip()
+            print court_data.text
+            court['ct_no'] = court_data.text
+            cj1 = court_data.find_next('td', attrs = {DATA_LABEL: JUDGE1_LABEL})
+            court['cj1'] =  cj1.text.split('JUSTICE').pop().strip()
             cj2 = cj1.find_next('td')
-            if cj2.has_key('data-label') and cj2['data-label'] == 'CORAM2':
-                c['cj2'] = cj2.text.split('JUSTICE').pop().strip()
+            if cj2.has_key(DATA_LABEL) and cj2[DATA_LABEL] == JUDGE2_LABEL:
+                court['cj2'] = cj2.text.split('JUSTICE').pop().strip()
             else:
-                c['cj2'] = ''
+                court['cj2'] = ''
             cases = {}
             cur_stage = ''
-            for court_sib in court.find_all_next('td'):
-                #print "text:" + court_sib.text
-                if not court_sib.has_key('data-label') or court_sib['data-label'] == 'CORAM1' or court_sib['data-label'] == 'CORAM2':
-                    continue
-                elif court_sib['data-label'] == 'Court':
-                    break
-                elif court_sib['data-label'] == 'Stage':
-                    cur_stage = court_sib.text
-                elif court_sib['data-label'] == 'S.No':
-                    cur_sno = int(court_sib.text.strip('.'))
-                    cases[cur_sno] = {"stage": cur_stage}
-                elif  court_sib['data-label'] == 'Case No.' or court_sib['data-label'] == 'Sub case No.':
-                    #print "case_no:" + court_sib.text
-                    if not (court_sib.text.startswith(('- -/-', '.', 'WPMP', 'WVMP', 'WAMP'))):
-                        case_id = {'case_id': court_sib.text}
-                        cases[cur_sno].setdefault('caseno',[]).append(case_id)
-                        q.put(case_id)
-                        # Add to queue cases[cur_sno]
+            self.get_cases_by_court(cases, court_data, cur_stage, worker_queue)
+
             cases_to_list = []
-            q.join()
+            worker_queue.join()
             #print "cases:" + str(cases)
             for key,val in cases.iteritems():
                 val['id'] = key
                 cases_to_list.append(val)
             cases_to_list = sorted(cases_to_list, key = lambda x: x['id'])
             print(json.dumps(cases_to_list, indent=4))
-            c['cases'] = cases_to_list
-            c_list.append(c)
+            court['cases'] = cases_to_list
+            causelist.append(court)
         #print(json.dumps(c_list, sort_keys=True, indent=4))
-        return c_list
+        return causelist
+
+    def get_cases_by_court(self, cases, court_data, cur_stage, worker_queue):
+        for court_sib in court_data.find_all_next('td'):
+            # print "text:" + court_sib.text
+            if not court_sib.has_key(DATA_LABEL) or court_sib[DATA_LABEL] == JUDGE1_LABEL or court_sib[
+                DATA_LABEL] == JUDGE2_LABEL:
+                continue
+            elif court_sib[DATA_LABEL] == 'Court':
+                break
+            elif court_sib[DATA_LABEL] == 'Stage':
+                cur_stage = court_sib.text
+            elif court_sib[DATA_LABEL] == 'S.No':
+                case_id_processed = False
+                cur_sno = int(court_sib.text.strip('.'))
+                cases[cur_sno] = {"stage": cur_stage}
+            elif court_sib[DATA_LABEL] == 'Case No.' or court_sib[DATA_LABEL] == 'Sub case No.':
+                # print "case_no:" + court_sib.text
+                if not (court_sib.text.startswith((IGNORED_CASE_TYPES))) and not (
+                    case_id_processed and SKIP_SAME_SERIAL_NO):
+                    case_id = {'case_id': court_sib.text}
+                    cases[cur_sno].setdefault('caseno', []).append(case_id)
+                    # Add to queue cases[cur_sno]
+                    worker_queue.put(case_id)
+                    case_id_processed = True
 
     def convertToCauseListDocx(self):
         fetchList = FetchList()
