@@ -23,7 +23,7 @@ MAIN_INFO_URL = "http://hc.tap.nic.in/csis/MainInfo.jsp?mtype={}&mno={}&year={}"
 
 JUDGE2_LABEL = 'CORAM2'
 JUDGE1_LABEL = 'CORAM1'
-IGNORED_CASE_TYPES = '- -/-', '.', 'WPMP', 'WVMP', 'WAMP', 'CRLPMP'
+IGNORED_CASE_TYPES = '- -/-', '.', 'WPMP', 'WVMP', 'WAMP', 'CRLPMP', 'IA'
 DATA_LABEL = 'data-label'
 SKIP_SAME_SERIAL_NO = True
 
@@ -38,10 +38,11 @@ class CaseWorker(Thread):
             case = self.q.get()
             print "case:" + str(case['case_id'])
             case_id = case['case_id']
-            case_type = case_id.split(' ')[0]
-            case_no = case_id.split(' ')[1].split('/')
+            case_type = case_id.split('/')[0]
+            case_no = case_id.split('/')[1]
+            case_year = case_id.split('/')[2]
             try:
-                pet, resp = CaseDetails().getCaseDetails(case_type, case_no[0], case_no[1])
+                pet, resp = CaseDetails().getCaseDetails(case_type, case_no, case_year)
                 case['petitioner'] = escape(pet)
                 case['respondent'] = escape(resp)
             except:
@@ -92,25 +93,23 @@ class FetchList:
         for adv_code in adv_codes:
             r3 = s.post(SEARCH_TYPE_URL, data={'advcd': adv_code})
             soup = BeautifulSoup(r3.text, 'html.parser')
-            courts_data = soup.find_all('td', attrs = {DATA_LABEL: 'Court'})
+            courts_data = soup.find_all('thead')
             causelist = []
             # Set up some threads to fetch the enclosures
 
             for court_data in courts_data:
                 print '--------'
-                print court_data.text
-                court_number = court_data.text
+                #print court_data.text
+                court_number = court_data.select("tr:nth-of-type(1)")[0].text
                 court_number = int(court_number.split('COURT NO.').pop().strip())
                 court.setdefault(court_number, {})
-                cj1 = court_data.find_next('td', attrs = {DATA_LABEL: JUDGE1_LABEL})
-                court[court_number]['cj1'] =  cj1.text.split('JUSTICE').pop().strip()
-                cj2 = cj1.find_next('td')
-                if cj2.has_key(DATA_LABEL) and cj2[DATA_LABEL] == JUDGE2_LABEL:
-                    court[court_number]['cj2'] = cj2.text.split('JUSTICE').pop().strip()
-                else:
-                    court[court_number]['cj2'] = ''
+                cj1 = court_data.select("tr:nth-of-type(2)")[0].text
+                court[court_number]['cj1'] =  cj1.split('JUSTICE').pop().strip()
+                cj2 = court_data.select("tr:nth-of-type(3)")[0].text
+                court[court_number]['cj2'] = cj2.split('JUSTICE').pop().strip()
                 cases = {}
-                cur_stage = ''
+                cur_stage = court_data.next_sibling.next_sibling.text.strip()
+                print cur_stage
                 self.get_cases_by_court(cases, court_data, cur_stage, self.worker_queue, adv_code)
                 court[court_number].setdefault('cases', {})
                 court[court_number]['cases'].update(cases)
@@ -118,26 +117,39 @@ class FetchList:
         return court
 
     def get_cases_by_court(self, cases, court_data, cur_stage, worker_queue, adv_code):
-        for court_sib in court_data.find_all_next('td'):
-            # print "text:" + court_sib.text
-            if not court_sib.has_key(DATA_LABEL) or court_sib[DATA_LABEL] == JUDGE1_LABEL or court_sib[DATA_LABEL] == JUDGE2_LABEL:
-                continue
-            elif court_sib[DATA_LABEL] == 'Court':
+        stage = court_data.next_sibling.next_sibling
+        cur_stage = stage.text.strip()
+        print cur_stage
+        for court_sib in stage.find_all_next('tr'):
+            find_tds = court_sib.find("td")
+            find_ths = court_sib.find("th")
+            if find_tds and find_tds.has_key(DATA_LABEL):
+                cases_list = court_sib.find("td", attrs={'data-label' : 'Case Det'}).text.strip().split()
+                cur_sno = int(court_sib.find("td", attrs={'data-label' : 'S.No'}).text.strip())
+                self.resolve_case_entry(adv_code, cases, cases_list, cur_sno, cur_stage, worker_queue)
+            elif find_ths and find_ths.text.strip().startswith('COURT NO.'):
                 break
-            elif court_sib[DATA_LABEL] == 'Stage':
-                cur_stage = court_sib.text
-            elif court_sib[DATA_LABEL] == 'S.No':
-                case_id_processed = False
-                cur_sno = int(court_sib.text.strip('.'))
-                cases[cur_sno] = {"stage": cur_stage, 'adv_code': adv_code}
-            elif court_sib[DATA_LABEL] == 'Case No.' or court_sib[DATA_LABEL] == 'Sub case No.':
-                # print "case_no:" + court_sib.text
-                if not (court_sib.text.startswith((IGNORED_CASE_TYPES))) and not (case_id_processed and SKIP_SAME_SERIAL_NO):
-                    case_id = {'case_id': court_sib.text}
-                    cases[cur_sno].setdefault('caseno', []).append(case_id)
-                    # Add to queue cases[cur_sno]
-                    worker_queue.put(case_id)
-                    case_id_processed = True
+            elif find_tds:
+                #This is case where for the last court the data-labels are not present. We try to infer based on the position of the records
+                pos_text = find_tds.text
+                try:
+                    cur_sno = int(pos_text)
+                    cases_list = court_sib.select("td:nth-of-type(2)")[0].text.strip().split()
+                    self.resolve_case_entry(adv_code, cases, cases_list, cur_sno, cur_stage, worker_queue)
+                except ValueError:
+                    print "Unknown field value, Skipping"
+            else:
+                cur_stage = court_sib.text.strip()
+                print "updating current stage:" + court_sib.text.strip()
+            #Need to write boundary condition for breaking out of the look
+
+            print court_sib
+
+    def resolve_case_entry(self, adv_code, cases, cases_list, cur_sno, cur_stage, worker_queue):
+        case_id = {'case_id': str(cases_list[0])}
+        cases[cur_sno] = {"stage": cur_stage, 'adv_code': adv_code}
+        cases[cur_sno].setdefault('caseno', []).append(case_id)
+        worker_queue.put(case_id)
 
     def convertToCauseListDocx(self, adv_codes):
         date = self.get_dates()
