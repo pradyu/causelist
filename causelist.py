@@ -1,6 +1,7 @@
 import json
 import requests
 import logging
+import base64
 from docxtpl import DocxTemplate
 from bs4 import BeautifulSoup
 from Queue import Queue
@@ -20,6 +21,7 @@ SEARCH_INPUT_URL = 'http://hc.tap.nic.in/Hcdbs/searchtypeinput.do'
 DATES_URL = 'http://hc.tap.nic.in/Hcdbs/getdates.jsp?listtype=D'
 SEARCH_DATES_URL = 'http://hc.tap.nic.in/Hcdbs/searchdates.do'
 MAIN_INFO_URL = "http://hc.tap.nic.in/csis/MainInfo.jsp?mtype={}&mno={}&year={}"
+CASE_DETAILS_URL = "http://distcourts.tap.nic.in/csis/getCaseDetails.action?searchtype=casenumber&mtype={}&mno={}&myear={}"
 
 JUDGE2_LABEL = 'CORAM2'
 JUDGE1_LABEL = 'CORAM1'
@@ -46,9 +48,14 @@ class CaseWorker(Thread):
                 case['petitioner'] = escape(pet)
                 case['respondent'] = escape(resp)
             except:
-                print "Could not find case details for:" + str(case_id)
-                case['petitioner'] = ''
-                case['respondent'] = ''
+                print "Could not find case details for:" + str(case_id) + " with old endpoint, trying new one."
+                try:
+                    pet, resp = CaseDetails().getCaseDetailsV2(case_type, case_no, case_year)
+                    case['petitioner'] = escape(pet)
+                    case['respondent'] = escape(resp)
+                except:
+                    case['petitioner'] = ''
+                    case['respondent'] = ''
             self.q.task_done()
 
 class CaseDetails():
@@ -65,6 +72,15 @@ class CaseDetails():
         print "Petitioner:" + petitioner.text
         print "respondent:" + respondent.text
         return petitioner.text,respondent.text
+
+    def getCaseDetailsV2(self, case_type, case_no, year):
+        res = requests.get(CASE_DETAILS_URL.format(case_type, case_no, year))
+        decoded_resp = base64.b64decode(res.text)
+        json_resp = json.loads(decoded_resp)
+        petitioner = str(json_resp[0]['petitioner'])
+        respondent = str(json_resp[0]['respondent'])
+        print "New endpoint: Petitioner:" + petitioner + ", respondent:" + respondent
+        return petitioner,respondent
 
 
 class FetchList:
