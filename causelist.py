@@ -79,7 +79,7 @@ class CaseDetails():
         json_resp = json.loads(decoded_resp)
         petitioner = str(json_resp[0]['petitioner'])
         respondent = str(json_resp[0]['respondent'])
-        print "New endpoint: Petitioner:" + petitioner + ", respondent:" + respondent
+        print "New endpoint: Petitioner:" + petitioner + ", respondent:" + respondent + " ,case number" + case_type + case_no
         return petitioner,respondent
 
 
@@ -120,9 +120,9 @@ class FetchList:
                 court_number = int(court_number.split('COURT NO.').pop().strip())
                 court.setdefault(court_number, {})
                 cj1 = court_data.select("tr:nth-of-type(2)")[0].text
-                court[court_number]['cj1'] =  cj1.split('JUSTICE').pop().strip()
+                court[court_number]['cj1'] = escape(cj1.split('JUSTICE').pop().strip())
                 cj2 = court_data.select("tr:nth-of-type(3)")[0].text
-                court[court_number]['cj2'] = cj2.split('JUSTICE').pop().strip()
+                court[court_number]['cj2'] = escape(cj2.split('JUSTICE').pop().strip())
                 cases = {}
                 cur_stage = court_data.next_sibling.next_sibling.text.strip()
                 print cur_stage
@@ -163,7 +163,7 @@ class FetchList:
 
     def resolve_case_entry(self, adv_code, cases, cases_list, cur_sno, cur_stage, worker_queue):
         case_id = {'case_id': str(cases_list[0])}
-        cases[cur_sno] = {"stage": cur_stage, 'adv_code': adv_code}
+        cases[cur_sno] = {"stage": escape(cur_stage), 'adv_code': adv_code}
         cases[cur_sno].setdefault('caseno', []).append(case_id)
         worker_queue.put(case_id)
 
