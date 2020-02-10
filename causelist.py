@@ -1,11 +1,10 @@
 import json
-from queue import Queue
-
 import requests
 import logging
 import base64
 from docxtpl import DocxTemplate
 from bs4 import BeautifulSoup
+from Queue import Queue
 from threading import Thread
 from xml.sax.saxutils import escape
 import argparse
@@ -84,8 +83,6 @@ class CaseDetails():
         print("New endpoint: Petitioner:" + petitioner + ", respondent:" + respondent + " ,case number" + case_type + case_no)
         return petitioner,respondent
 
-    def get_case_details_telangana(self, case_type, case_no, year):
-        res = requests.get(CASE_DETAILS_URL_TELANGANA.format(case_type, case_no, year))
 
 class FetchList:
 
