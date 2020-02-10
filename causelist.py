@@ -1,10 +1,11 @@
 import json
+from queue import Queue
+
 import requests
 import logging
 import base64
 from docxtpl import DocxTemplate
 from bs4 import BeautifulSoup
-from Queue import Queue
 from threading import Thread
 from xml.sax.saxutils import escape
 import argparse
@@ -16,13 +17,13 @@ import argparse
 
 #logging.basicConfig(level=logging.DEBUG)
 NUMBER_OF_WORKERS = 15
-SEARCH_TYPE_URL = 'http://hc.tap.nic.in/Hcdbs/searchtype.do'
-SEARCH_INPUT_URL = 'http://hc.tap.nic.in/Hcdbs/searchtypeinput.do'
-DATES_URL = 'http://hc.tap.nic.in/Hcdbs/getdates.jsp?listtype=D'
-SEARCH_DATES_URL = 'http://hc.tap.nic.in/Hcdbs/searchdates.do'
-MAIN_INFO_URL = "http://hc.tap.nic.in/csis/MainInfo.jsp?mtype={}&mno={}&year={}"
+SEARCH_TYPE_URL = 'http://tshc.gov.in/Hcdbs/searchtype.do'
+SEARCH_INPUT_URL = 'http://tshc.gov.in/Hcdbs/searchtypeinput.do'
+DATES_URL = 'http://tshc.gov.in/Hcdbs/getdates.jsp?listtype=D'
+SEARCH_DATES_URL = 'http://tshc.gov.in/Hcdbs/searchdates.do'
+MAIN_INFO_URL = "http://tshc.gov.in/csis/MainInfo.jsp?mtype={}&mno={}&year={}"
 CASE_DETAILS_URL = "http://distcourts.tap.nic.in/csis/getCaseDetails.action?searchtype=casenumber&mtype={}&mno={}&myear={}"
-
+CASE_DETAILS_URL_TELANGANA = "http://tshcstatus.nic.in/getMainCaseDetails.action?casenum={}%20{}/{}"
 JUDGE2_LABEL = 'CORAM2'
 JUDGE1_LABEL = 'CORAM1'
 IGNORED_CASE_TYPES = '- -/-', '.', 'WPMP', 'WVMP', 'WAMP', 'CRLPMP', 'IA'
@@ -38,7 +39,7 @@ class CaseWorker(Thread):
     def run(self):
         while True:
             case = self.q.get()
-            print "case:" + str(case['case_id'])
+            print("case:" + str(case['case_id']))
             case_id = case['case_id']
             case_type = case_id.split('/')[0]
             case_no = case_id.split('/')[1]
@@ -48,12 +49,13 @@ class CaseWorker(Thread):
                 case['petitioner'] = escape(pet)
                 case['respondent'] = escape(resp)
             except:
-                print "Could not find case details for:" + str(case_id) + " with old endpoint, trying new one."
+                print("Could not find case details for:" + str(case_id) + " with old endpoint, trying new one.")
                 try:
                     pet, resp = CaseDetails().getCaseDetailsV2(case_type, case_no, case_year)
                     case['petitioner'] = escape(pet)
                     case['respondent'] = escape(resp)
                 except:
+                    print("Could not get case info in newer version as well.")
                     case['petitioner'] = ''
                     case['respondent'] = ''
             self.q.task_done()
@@ -69,19 +71,21 @@ class CaseDetails():
         pet = soup.find('b',text="PETITIONER")
         petitioner = pet.find_next('b').find_next('b')
         respondent = petitioner.find_next('b').find_next('b').find_next('b')
-        print "Petitioner:" + petitioner.text
-        print "respondent:" + respondent.text
+        print("Petitioner:" + petitioner.text)
+        print("respondent:" + respondent.text)
         return petitioner.text,respondent.text
 
     def getCaseDetailsV2(self, case_type, case_no, year):
-        res = requests.get(CASE_DETAILS_URL.format(case_type, case_no, year))
+        res = requests.get(CASE_DETAILS_URL_TELANGANA.format(case_type, case_no, year))
         decoded_resp = base64.b64decode(res.text)
         json_resp = json.loads(decoded_resp)
         petitioner = str(json_resp[0]['petitioner'])
         respondent = str(json_resp[0]['respondent'])
-        print "New endpoint: Petitioner:" + petitioner + ", respondent:" + respondent + " ,case number" + case_type + case_no
+        print("New endpoint: Petitioner:" + petitioner + ", respondent:" + respondent + " ,case number" + case_type + case_no)
         return petitioner,respondent
 
+    def get_case_details_telangana(self, case_type, case_no, year):
+        res = requests.get(CASE_DETAILS_URL_TELANGANA.format(case_type, case_no, year))
 
 class FetchList:
 
@@ -104,7 +108,7 @@ class FetchList:
         s = requests.Session()
         self.get_dates(s)
         r2 = s.post(SEARCH_INPUT_URL, data = {'listdate': date, 'caset': 'advcdsearch'})
-        print r2.cookies
+        print(r2.cookies)
         court = {}
         for adv_code in adv_codes:
             r3 = s.post(SEARCH_TYPE_URL, data={'advcd': adv_code})
@@ -114,7 +118,7 @@ class FetchList:
             # Set up some threads to fetch the enclosures
 
             for court_data in courts_data:
-                print '--------'
+                print('--------')
                 #print court_data.text
                 court_number = court_data.select("tr:nth-of-type(1)")[0].text
                 court_number = int(court_number.split('COURT NO.').pop().strip())
@@ -125,7 +129,7 @@ class FetchList:
                 court[court_number]['cj2'] = escape(cj2.split('JUSTICE').pop().strip())
                 cases = {}
                 cur_stage = court_data.next_sibling.next_sibling.text.strip()
-                print cur_stage
+                print(cur_stage)
                 self.get_cases_by_court(cases, court_data, cur_stage, self.worker_queue, adv_code)
                 court[court_number].setdefault('cases', {})
                 court[court_number]['cases'].update(cases)
@@ -135,7 +139,7 @@ class FetchList:
     def get_cases_by_court(self, cases, court_data, cur_stage, worker_queue, adv_code):
         stage = court_data.next_sibling.next_sibling
         cur_stage = stage.text.strip()
-        print cur_stage
+        print(cur_stage)
         for court_sib in stage.find_all_next('tr'):
             find_tds = court_sib.find("td")
             find_ths = court_sib.find("th")
@@ -153,13 +157,13 @@ class FetchList:
                     cases_list = court_sib.select("td:nth-of-type(2)")[0].text.strip().split()
                     self.resolve_case_entry(adv_code, cases, cases_list, cur_sno, cur_stage, worker_queue)
                 except ValueError:
-                    print "Unknown field value, Skipping"
+                    print("Unknown field value, Skipping")
             else:
                 cur_stage = court_sib.text.strip()
-                print "updating current stage:" + court_sib.text.strip()
+                print("updating current stage:" + court_sib.text.strip())
             #Need to write boundary condition for breaking out of the look
 
-            print court_sib
+            print(court_sib)
 
     def resolve_case_entry(self, adv_code, cases, cases_list, cur_sno, cur_stage, worker_queue):
         case_id = {'case_id': str(cases_list[0])}
